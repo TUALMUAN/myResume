@@ -55,7 +55,7 @@
   justify-content: center; /* Center the text horizontally */
   align-items: center; /* Center the text vertically */
 
-  animation: colorChange 5s infinite;
+  animation: colorChange 7s infinite;
 }
 
 @keyframes colorChange {
