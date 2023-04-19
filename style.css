@@ -107,7 +107,7 @@ color:#22282c
   border: 3px solid #053141;
   padding: 5px;
   display: flex;
-  margin-right: 71%;
+  margin-right: 69%;
   text-align: center;
 }
 
@@ -143,7 +143,7 @@ body {
     height: 330px;
     align-items: center;
     margin: 20px;
-    padding: 20px;
+    padding: 18px;
     display: inline-flex;
   }
   
