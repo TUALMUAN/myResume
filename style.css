@@ -223,7 +223,7 @@ body {
   font-weight: bold;
   font-display:inherit;
   font-style: italic;
-  color: #053141;
+  color: #a77105;
 }
   .content img {
    padding-left: 0%;
@@ -232,16 +232,13 @@ body {
   .table {
     padding: 0px;
     display: flex;
-    border: 3px solid #0c79c2;
-    margin-top: 0%;
-    margin-left:7%;
-    margin-bottom: 0%;
-    margin-right: 7%;
+    border: 3px solid #f3f6f8;
+    margin: auto;
   }
 
   .table img {
     
-    width: 300px;
+    width: 350px;
     height: 300px;
     display: flex;
     margin:auto;
