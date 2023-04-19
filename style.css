@@ -230,7 +230,7 @@ body {
   }
 
   .table {
-    padding: 0px;
+    padding: 5px;
     display: flex;
     border: 3px solid #f3f6f8;
     margin: auto;
@@ -246,6 +246,7 @@ body {
 
   .table :hover {
     border:3px solid #106b6b;
+    padding: 5px;
   }
 
   .note {
