@@ -127,14 +127,14 @@ body {
     margin-left: 8px;
     margin-right: 8px;
     align-content: center;
-    padding: auto;
+    
   }
 
   .images {
     display: inline-flex;    
     text-align: center;
     margin:auto;
-    padding: auto;
+    padding: 15px;
   }
 
   .images img {
@@ -142,7 +142,7 @@ body {
     width: 350px;
     height: 330px;
     align-items: center;
-    margin: 20px;
+    margin: 18px;
     padding: 18px;
     display: inline-flex;
   }
