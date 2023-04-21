@@ -11,20 +11,20 @@
 }
 
 body {
-  margin: 60px;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 30px;
   font-family: Arial, sans-serif;
   font-size: 16px;
-  line-height: 40px;
+  line-height: 20px;
   color: #080808;
   text-align: justify;
-  background-color: rgb(232, 241, 244);
-  
+  background-color: rgb(232, 241, 244); 
 }
 
 * {
-  box-sizing: border-box;
-  margin: auto;
-  
+  box-sizing: border-box; 
 }
 
 #dateDisplay {
@@ -35,19 +35,16 @@ body {
   padding: 7px 7px;
 }
 
-.resumeTitle h1 {
-  text-align: center;
-  padding: 10px;
-}
 .resumeTitle {
-
+  
+  text-align: center;
   color: #eef2f4;
   background-color: rgb(107, 185, 213);
   margin-left: 30%;
   margin-right: 30%;
   font-weight: bold;
-  display: flex;
-  padding: 10px;
+  padding: 8px;
+  font-style: italic;
 
   animation: colorChange 7s infinite;
 }
@@ -69,42 +66,41 @@ body {
 
  
 header {
-  background-color: #92c8ea;
+  background-color: #75bacf;
   text-align: center;
-  margin-left: 150px; 
-  margin-top: 20px;
-  margin-right: 150px;
-  margin-bottom: 20px;
-  display: flex;
-  padding: 5px;
+  margin: 20px 150px;
+  display:flex;
+  justify-content: center;
 }
 
 header img {
-  width: 300px;
-  height: 300px;
-  padding: 18px;
-  align-content: center;
-  padding: 5px;
-  margin-top: 20px;
-  border: 3px solid #000000;
+  border-radius: 50%;
+  width: 170px;
+  height: 170px;
+  padding: 2px;
+  margin-left: 80px;
+  margin-top: 36px;
+  border: 1px solid #000000;
 }
+
 
 header .name {
   color:rgb(30, 85, 153);
   text-align: center; 
   font-size: large;
+  border: 2px solid #384040;
+  padding-left: 5px;
+  padding-right: 5px;
   margin: auto;
-  border: 3px solid #a77105;
-  padding: 10px;
 }
 
-nav li {
-  padding: 5px;
- 
+header li {
+  padding: 7px;
+  margin-right: 70px;
 }
 
 ul :hover {
-  background-color: #d7dee4;
+  background-color: #dac597;
   
 }
 
@@ -118,35 +114,33 @@ nav a {
   background-color: rgb(62, 93, 109);
   margin-left: 25px;
   margin-right: 25px;
-  align-content: center;
-  
 }
 
 .images {  
   text-align: center;
-  margin-left: 10%;
-  display: inline-flex;
-  padding-top: 20px;
-  padding-bottom: 15px;
+  position: relative;
+  display: flex;
+  margin-left: 73px;
+  margin-right: 0px;
+  padding: 20px;
 }
 
 .images img {
-  
   width: 350px;
   height: 330px;
   align-items: center;
-  padding: 35px;
+  padding: 30px;
+}
 
+.images .cap {
+ 
+  border:2px rgb(10, 3, 3) #0c79c2;
+  color: rgb(223, 217, 197);
+  text-align: center;
 }
 
 #underline {
   text-decoration: underline;
-}
-
-
-h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
 }
 
 #profile {
@@ -155,18 +149,84 @@ text-align: justify;
 border: 1px solid #000000;
 background-color: azure;
 line-height: 30px; 
-display: flex;
+display: -webkit-inline-flex;
 padding: 20px;
-color:#22282c
+color:#22282c;
+margin: 10px 150px;
 }
 
-.images .cap {
- 
-  border:2px rgb(10, 3, 3) #0c79c2;
-  color: rgb(202, 157, 22);
+.firstLetter {
+  padding-top: 30px;
+  padding-right: 13px;
+}
+
+hr {
+  margin: 2% 30%;
+}
+
+.content {
+  text-align: center;
+  display: flex;
+  border:2px solid #0ca2a2;
+  margin: 30px 150px;
+  
+}
+
+.content p {
+
+text-align: center;
+font-weight: bold;
+font-style: italic;
+color: #a77105;
+justify-content: center;
+padding-top: 13px;
+padding-left: 30px;
+
+}
+
+.content img {
+ padding: 15px 80px;
+}
+
+.content div {
+  flex: 1;
+}
+
+.content div:first-child {
   text-align: center;
 }
 
+.table {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #f3f6f8;
+  }
+
+  .table img {
+
+    padding: 5px;
+    width: 350px;
+    height: 300px;
+  
+  }
+
+  .table div {
+    text-align: center;
+
+  }
+
+  .table :hover {
+    border:3px solid #106b6b;
+  }
+
+  .tab {
+    text-align: justify;
+    padding: 30px;
+  }
+
+  
 .firstPrize {
   border: 3px solid #053141;
   padding: 5px;
@@ -179,47 +239,6 @@ color:#22282c
     line-height: 28px;
   }
 
-  .content {
-    text-align: center;
-    display: flex;
-    border:3px solid #0ca2a2;
-    margin-top: 3%;
-    margin-left: 13%;
-    margin-right: 13%;
-    margin-bottom: 2%;
-  }
-
-.content p {
-  padding: 8px;
-  text-align: center;
-  font-weight: bold;
-  font-display:inherit;
-  font-style: italic;
-  color: #a77105;
-}
-  .content img {
-   padding-left: 0%;
-  }
-
-  .table {
-    padding: 5px;
-    display: flex;
-    border: 3px solid #f3f6f8;
-    margin: auto;
-  }
-
-  .table img {
-    
-    width: 350px;
-    height: 300px;
-    display: flex;
-    margin:auto;
-  }
-
-  .table :hover {
-    border:3px solid #106b6b;
-    padding: 5px;
-  }
 
   .note {
     text-align: justify;
@@ -235,7 +254,7 @@ color:#22282c
   text-align: center;
  }
 
-  .contacts {
+.contacts {
     border: 2px solid #000000;
     background-color: #115b89;
     color: azure;
@@ -247,7 +266,8 @@ color:#22282c
 #contact li {
   line-height: 40px;
 }
-  .contacts a {
+
+.contacts a {
     text-decoration: none;
     color: rgb(13, 178, 178);
     display: inline;
@@ -270,6 +290,7 @@ color:#22282c
   }
 
   footer {
+
     text-align: center;
     background-color: #032336;
     color:#fff;
