@@ -5,23 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Resume (Mr.Tual Khan Muan)</title>
+    <title id="website-title">My Personal Resume (Mr.Tual Khan Muan)</title>
     <link rel="icon" href="https://drive.google.com/uc?id=1kS8yIdSkOi2SP1Yd0ZR7NGwfW7ed1KUs" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+  <body>
     <div>
       <span  href="#lastDate" id="dateDisplay"></span>
      </div> 
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="stylesheet" href="wrd.css" type="text/css">
-    <script src="photo.js"></script>
-    <script src="updatedDate.js"></script>
-    <script>
-    document.addEventListener('contextmenu', function(e) {
-    e.preventDefault();
-    });
-    </script>
          
-</head>
-  <body>
     <div class="resumeTitle">
       <h1>My Personal Resume</h1>
     </div>
@@ -69,7 +61,9 @@
         
         <p>I am Mr. Tual Khan Muan born on 03 Nov, 1991 (Sunday).</p>
         <p>"My motto" is "Do things honestly and righteuously and they will bounce back to you!"</p>
+        </section>
           <hr>
+        <section>
         <p id="profile">
         <strong class="firstLetter">PROFILE</strong> “I am a hard-working, motivated, and enthusiastic office administrator who always
           strive to achieve the highest standard possible, at any given task and in any situation. I am accustomed
@@ -118,14 +112,17 @@
      <br>
 
       <section id="experience">
-        <h2 id="underline">Experience</h2>
-        <ul>
-          <li>
-            <h3>Deputy Manager of HR/Administration Department</h3>
-            <h4>POSCO INTERNATIONAL Amara Company Limited (SOUTH KOREA INTERNATIONAL Corporation)</h4>
-            <h4>Work Location - Ward No.28, Block No.7, Sinphyushin Yeik Tha, 6 1/2 miles Pyay Road, Hlaing Township, Yangon, Myanmar</h4>
-            <h5>(Joined in 2016 to present)</h5>
+            <h2 id="underline">Experience</h2>
             <ul>
+              <li>
+                <h3>Deputy Manager of HR/Administration Department</h3>
+              <h4>POSCO INTERNATIONAL Amara Company Limited (SOUTH KOREA INTERNATIONAL Corporation)</h4>
+              <h4>Work Location - Ward No.28, Block No.7, Sinphyushin Yeik Tha, 6 1/2 miles Pyay Road, Hlaing Township, Yangon, Myanmar</h4>
+              <h5>(Joined in 2016 to present)</h5>
+              </li> 
+            
+            
+            <ul class="job-description">
               <li>Maintaining control of Company mail (Google-Suite) addresses, editing, data restoration, migration, administering users, managing facebook page and company website.</li>
               <li>Designing, editing, and printing staff cards, business cards, company letter head, and report forms.</li>
               <li>Maintaining, fixing, and purchasing office equipment such as Printers, Laptops, Shredders, Computer Monitors, etc.</li>
@@ -141,12 +138,9 @@
               <li>Supporting recruiting manager with clerical duties, Preparing and posting jobs vacancy on social media and LinkedIn page, Scheduling interviews and balancing calendars for interviewers and candidates, scheduling calls and interviews, maintaining candidate database and handling paperwork.</li>
               <li>Calling for office equipment repairs; maintaining equipment inventories; maintaining and updating supplies inventory by checking and purchasing stocks monthly, placing and expediting
                 orders for supplies. Maintaining and purchasing office supplies and employee benefits monthly.</li>  
-              <li>Carrying out administrative duties such as filing, typing, copying, books binding, scanning etc.</li>
-                
+              <li>Carrying out administrative duties such as filing, typing, copying, books binding, scanning etc.</li>  
+              </ul>
             </ul>
-          </li>
-        </ul>
-        
         <hr>
       </section>
       
@@ -156,17 +150,18 @@
           <li>
             <h3>Bachelor Degree (Geography)</h3>
             <h4>Dagon University - Yangon, Myanmar</h4>
-            <h3>Qualified for continuing "Master Degree"</h3>
+            <h3 class="master-degree">Qualified for continuing "Master Degree"</h3>
             <h5 class="firstPrize">First Prize Awarded in Third Year and Final Year</h5>
             <p>(2012 - 2015)</p>
           </li>
         </ul>
       </section>
       <br>
+      <hr>
       <section id="skills">
         <h2 id="underline">Qualifications and Skills</h2>
         <ul>
-          <li>Office and Business Management (Certificate of Office and Business Management at First Culture)</li>
+          <li>Office and Business Management (Certificate of Office and Business Management at First Culture Business Teaching Center)</li>
           <li>Proficient in Microsoft PowerPoint, Microsoft Word, Excel, Outlook (Certificate of Advanced Computer at La Salle English &amp; Computer Center)</li>
           <li>Good user in Adobe Photoshop Software, Illustrator, Smart ID card software (Certificate of Graphic Design at La Salle English &amp; Computer Center)</li> 
           </ul>
@@ -177,15 +172,12 @@
             <li>Professional Diploma in Cyber Security & Ethical Hacking by MIBA University</li>
             <li>Web Development (HTML, CSS, JavaScript) (Certificate by Codecamy and FreeCodeCademy)</li>
           </ul>
-        
           <p><h2 id="underline">Language Proficiency</h2></p>
           <ul>
           <li>C1 Advanced English Proficiency - 2022 (Certificate by DynEd, Dynamic Education by American University Yangon)</li>  
           <li>IELTS General English Test - 2016  (Certificate of General IELST Test)</li> 
-          <li>C1 Advanced English Proficiency - 2022 (Certificate by British Council English Learning Website)</li>
-           
-        </ul>
-
+          <li>C1 Advanced English Proficiency - 2022 (Certificate by British Council English Learning Website)</li>   
+          </ul>
       </section>
       <hr>
       <br>
@@ -225,12 +217,20 @@
      <li>Thank you so much for visiting my personal Resume website. I am looking forward to seeing you soon for further interview in person.</li>
      <li id="red">This webpage is fully written by myself using my knowledge on web programming languages (HTML, CSS, JavaScript).</li>
     </ul> 
-   <p>Last updated: 18 April, 2023.<span id="lastDate"></span></p>
+   <p>Last updated: 22 April, 2023.<span id="lastDate"></span></p>
   </section>
   
     <footer>
       <p>Copyright &copy;2023 My Personal Resume - All Rights Reserved.</p>
     </footer>
+
+    
+    <script src="script.js"></script>
+    <script>
+    document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+    });
+    </script>
   </body>
   
 </html>
