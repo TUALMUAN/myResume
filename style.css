@@ -522,12 +522,12 @@ header {
   margin-right: 150px;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: auto;
 }
 
 header div {
   display: inline-flex;
-  padding: 20px;
+  padding: auto;
 }
 
 header img {
