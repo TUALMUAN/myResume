@@ -59,10 +59,6 @@
   body {
     margin: 0;
     padding: 0;
-    margin-top: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 30px;
   }
 
   /* Update margin for header */
@@ -520,7 +516,6 @@ header {
   text-align: center;
   margin-left: 150px;
   margin-right: 150px;
-  justify-content: center;
 }
 
 header div { 
@@ -545,14 +540,14 @@ header .name {
   border: 2px solid #384040;
   padding-left: 5px;
   padding-right: 5px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
   justify-content: center;
 }
 
 header li {
   padding: 7px;
-  justify-content: center;
+  
 }
 
 header ul :hover {
