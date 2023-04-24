@@ -232,15 +232,17 @@ nav a {
   text-align: center;
   display: inline-flex;
   margin: auto;
-  padding: 20px;
+  padding: 30px;
   justify-content: center;
+  overflow: auto;
 }
 
 .images img {
   width: 350px;
   height: 330px;
   align-items: center;
-  padding: 30px;
+  padding: 40px;
+  justify-content: center;
 }
 
 .images .cap {
