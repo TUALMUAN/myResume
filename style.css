@@ -520,7 +520,7 @@ header div {
   text-align: center;
   margin-left: 150px;
   margin-right: 150px;
-  display:inline-flex;
+
   justify-content: center;
   align-items: center;
   padding: 15px;
@@ -533,6 +533,7 @@ header img {
   padding: 2px;
   border: 1px solid #000000;
   margin: auto;
+  display: inline-flex;
 }
 
 
@@ -545,6 +546,7 @@ header .name {
   padding-right: 5px;
   margin-left: 20px;
   margin-right: 20px;
+  display: inline-flex;
 }
 
 header li {
