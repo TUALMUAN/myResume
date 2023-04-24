@@ -476,7 +476,7 @@ header {
 
 header div {
   display: flex;
-  position: relative;
+  position: absolute;
 }
 
 header img {
@@ -496,7 +496,6 @@ header .name {
   border: 2px solid #384040;
   padding-left: 5px;
   padding-right: 5px;
-  margin: 0px;
 }
 
 header li {
