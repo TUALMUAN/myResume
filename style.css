@@ -521,12 +521,10 @@ header {
   margin-left: 150px;
   margin-right: 150px;
   justify-content: center;
-  align-items: center;
-  padding: auto;
+  display: inline-flex;
 }
 
-header div {
-  display: inline-flex;
+header div { 
   margin: auto;
 }
 
