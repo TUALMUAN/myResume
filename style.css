@@ -527,7 +527,7 @@ header {
 
 header div {
   display: inline-flex;
-  padding: auto;
+  margin: auto;
 }
 
 header img {
@@ -537,6 +537,7 @@ header img {
   padding: 2px;
   border: 1px solid #000000;
   margin: auto;
+  justify-content: center;
 }
 
 header .name {
@@ -548,10 +549,12 @@ header .name {
   padding-right: 5px;
   margin-left: 20px;
   margin-right: 20px;
+  justify-content: center;
 }
 
 header li {
   padding: 7px;
+  justify-content: center;
 }
 
 header ul :hover {
