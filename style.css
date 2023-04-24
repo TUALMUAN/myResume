@@ -519,8 +519,9 @@ header {
   background-color: #75bacf;
   text-align: center;
   margin: 20px 150px;
-  display:flex;
+  display:inline-flex;
   justify-content: center;
+  align-items: center;
 }
 
 header img {
@@ -528,8 +529,8 @@ header img {
   width: 170px;
   height: 170px;
   padding: 2px;
-  margin-left: 80px;
-  margin-top: 36px;
+  margin: auto;
+  display: inline-flex;
   border: 1px solid #000000;
 }
 
@@ -546,7 +547,8 @@ header .name {
 
 header li {
   padding: 7px;
-  margin-right: 70px;
+  margin: auto;
+
 }
 
 header ul :hover {
