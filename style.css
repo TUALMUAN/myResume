@@ -477,7 +477,6 @@ header {
 header div {
   display: flex;
   position: relative;
-  margin: auto;
 }
 
 header img {
@@ -485,7 +484,7 @@ header img {
   width: 170px;
   height: 170px;
   padding: 2px;
-  margin: auto;
+  margin-left: 15px;
   border: 1px solid #000000;
 }
 
@@ -497,12 +496,12 @@ header .name {
   border: 2px solid #384040;
   padding-left: 5px;
   padding-right: 5px;
-  margin: auto;
+  margin: 0px;
 }
 
 header li {
   padding: 7px;
- margin: auto;
+ margin-right: 15px;
 }
 
 header ul :hover {
