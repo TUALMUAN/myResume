@@ -224,7 +224,7 @@ nav a {
 .images {  
   text-align: center;
   position: relative;
-  display: flex;
+  display: inline-flex;
   margin-left: 73px;
   margin-right: 73px;
   padding: 20px;
@@ -513,6 +513,7 @@ header img {
   height: 170px;
   padding: 2px;
   border: 1px solid #000000;
+  display: inline-flex;
 }
 
 
@@ -524,6 +525,7 @@ header .name {
   padding-left: 5px;
   padding-right: 5px;
   margin: auto;
+  display: inline-flex;
   
 }
 
