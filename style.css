@@ -523,11 +523,11 @@ header {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  display: inline-flex;
+  display: inline-block;
 }
 
 header div {
-  display: inline-flex;
+  display: inline-block;
 }
 
 header img {
