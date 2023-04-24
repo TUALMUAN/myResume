@@ -533,6 +533,7 @@ header img {
   padding: 2px;
   display: inline-flex;
   border: 1px solid #000000;
+  margin: auto;
 }
 
 
@@ -543,10 +544,12 @@ header .name {
   border: 2px solid #384040;
   padding-left: 5px;
   padding-right: 5px;
+  margin: auto;
 }
 
 header li {
   padding: 7px;
+  margin: auto;
 }
 
 header ul :hover {
