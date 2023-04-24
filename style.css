@@ -87,10 +87,15 @@
 @media only screen and (min-width: 1024px) {
   /* Styles for large screens */
   /* CSS styles for the website title */
+  * {
+    margin: auto;
+    padding: auto;
+  }
 
 }
 
 /* CSS styles for the website title */
+
 #website-title {
   top: 50%;
   left: 50%;
@@ -160,10 +165,11 @@ header {
   text-align: center;
   margin-left: 150px;
   margin-right: 150px;
+  display: inline-flex;
 }
 
 header div { 
-  margin: 10px;
+  margin: 30px;
   display: inline-flex;
 }
 
@@ -173,7 +179,7 @@ header img {
   height: 170px;
   padding: 2px;
   border: 1px solid #000000;
-  margin: auto;
+  margin: 20px;
   justify-content: center;
 }
 
@@ -191,6 +197,7 @@ header .name {
 
 header li {
   padding: 7px;
+  margin: 20px;
   
 }
 
