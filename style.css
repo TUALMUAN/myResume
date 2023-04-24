@@ -472,7 +472,13 @@ header {
   text-align: center;
   margin: 20px 150px;
   justify-content: center;
-  display: inline-flex;
+}
+
+header div {
+  display: flex;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 header img {
