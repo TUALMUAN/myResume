@@ -481,6 +481,7 @@ header div {
   margin-right: 40px;
   justify-content: center;
   text-align: center;
+  padding: 30px;
 }
 
 header img {
@@ -489,6 +490,7 @@ header img {
   height: 170px;
   padding: 2px;
   margin-left: 15px;
+  margin-top: 25px;
   border: 1px solid #000000;
 }
 
@@ -498,8 +500,8 @@ header .name {
   text-align: center; 
   font-size: large;
   border: 2px solid #384040;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 10px;
+  justify-content: center;
 }
 
 header li {
