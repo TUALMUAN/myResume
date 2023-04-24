@@ -476,7 +476,11 @@ header {
 
 header div {
   display: flex;
-  position: absolute;
+  position: relative;
+  margin-left: 40px;
+  margin-right: 40px;
+  justify-content: center;
+  text-align: center;
 }
 
 header img {
