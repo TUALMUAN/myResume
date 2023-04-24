@@ -475,11 +475,6 @@ header {
   display: inline-flex;
 }
 
-header div {
-  display: inline-flex;
-  padding: 10px;
-}
-
 header img {
   border-radius: 50%;
   width: 170px;
