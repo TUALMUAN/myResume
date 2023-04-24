@@ -526,6 +526,7 @@ header {
 
 header div { 
   margin: auto;
+  display: inline-block;
 }
 
 header img {
