@@ -1,7 +1,7 @@
 @media only screen and (max-width: 768px) {
   /* Hide header photo on small screens */
   header div:first-child {
-    display: none;
+    display: inline-flex;
   }
 
   /* Center align the name on small screens */
@@ -166,10 +166,14 @@ header {
   background-color: #75bacf;
   text-align: center;
   margin: 20px 150px;
-  display:flex;
+  display:inline-flex;
   justify-content: center;
 }
-
+header div {
+  display: flex;
+  
+  }
+  
 header img {
   border-radius: 50%;
   width: 170px;
@@ -435,6 +439,7 @@ padding-left: 30px;
 
 
 /* CSS styles for the website title */
+
 #website-title {
   position: absolute;
   top: 50%;
@@ -504,8 +509,11 @@ header {
   background-color: #75bacf;
   text-align: center;
   margin: 20px 150px;
-  display:inline-flex;
   justify-content: center;
+}
+
+header div {
+  display: flex;
 }
 
 header img {
