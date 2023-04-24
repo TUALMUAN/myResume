@@ -477,8 +477,7 @@ header {
 header div {
   display: flex;
   position: relative;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: auto;
 }
 
 header img {
