@@ -492,10 +492,10 @@ header .name {
   text-align: center; 
   font-size: large;
   border: 2px solid #384040;
-  padding: 3px;
+  padding: 5px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   justify-content: center;
-  margin-top: 35px;
-  margin-bottom: 35px;
 }
 
 header li {
