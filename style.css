@@ -493,7 +493,8 @@ header .name {
   border: 2px solid #384040;
   padding-left: 5px;
   padding-right: 5px;
-  margin: 10px 80px;
+  margin-top: 80px;
+  justify-content: center;
 }
 
 header li {
