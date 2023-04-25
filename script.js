@@ -1,6 +1,6 @@
 // Get the current date
 // Get the current date object
-const currentDate = new Date();
+const currentDate = new Date(); 
 
 // Define an array of month names
 const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -61,7 +61,8 @@ setInterval(updateImage, 3000);
 var photos = [
   "https://drive.google.com/uc?id=1vQREWnsRUl1qcyBVjXHMwKgvSKxD7GgV",
   "https://drive.google.com/uc?id=1hdKuVQtmcMmHctWMA3XomwvfUbHqmaR8",
-  "https://drive.google.com/uc?id=1_wf9hgeYr4_9Y7DPZQ_LSur3fJSiB6O_"
+  "https://drive.google.com/uc?id=1_wf9hgeYr4_9Y7DPZQ_LSur3fJSiB6O_",
+  "https://drive.google.com/uc?id=19ZKcwQHjjW1KjfSHBVSITfmnPqyncv1Y"
    ];
    https://drive.google.com/file/d/1vQREWnsRUl1qcyBVjXHMwKgvSKxD7GgV/view?usp=share_link 
 var number = 0;
