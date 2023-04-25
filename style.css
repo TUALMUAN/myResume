@@ -466,8 +466,8 @@ header {
 header div {
   display: flex;
   position: relative;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
   justify-content: center;
   text-align: center;
 }
@@ -490,10 +490,14 @@ header .name {
   justify-content: center;
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  align-content: center;
 }
 
 header li {
   padding: 7px;
+  text-decoration: none;
 }
 
 header ul :hover {
