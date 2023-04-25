@@ -180,14 +180,6 @@ nav a {
   color: navy;
 }
 
-.image-row {
-  border: 1px solid #accce0;
-  background-color: rgb(62, 93, 109);
-  margin-left: 25px;
-  margin-right: 25px;
-  justify-content: center;
-}
-
 .images {  
   text-align: center;
   position: relative;
@@ -530,20 +522,19 @@ nav a {
 }
 
 .image-row {
-  border: 1px solid #accce0;
-  background-color: rgb(62, 93, 109);
-  margin-left: 25px;
-  margin-right: 25px;
-  justify-content: center;
+  justity-content: center;
 }
 
 .images {  
   text-align: center;
   position: relative;
   display: flex;
-  margin-left: 73px;
-  margin-right: 73px;
   padding: 20px;
+  border: 1px solid #accce0;
+  background-color: rgb(62, 93, 109);
+  margin-left: 25px;
+  margin-right: 25px;
+  justify-content: center;
 }
 
 .images img {
