@@ -486,7 +486,7 @@ header .name {
   color:rgb(30, 85, 153);
   text-align: center; 
   font-size: large;
-  border: 2px solid #384040;
+  border: 2px solid #b3d3d3;
   justify-content: center;
   margin-left: 18px;
   margin-right: 18px;
@@ -567,7 +567,7 @@ margin: 10px 150px;
 }
 
 .firstLetter {
-  padding-top: 30px;
+  padding-top: 31px;
   padding-right: 13px;
 }
 
