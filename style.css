@@ -591,11 +591,13 @@ color: #a77105;
 justify-content: center;
 padding-top: 13px;
 padding-left: 30px;
+position: absolute;
 
 }
 
 .content img {
  padding: 15px 80px;
+ position: absolute;
 }
 
 .content div {
