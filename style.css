@@ -486,7 +486,7 @@ header .name {
   color:rgb(30, 85, 153);
   text-align: center; 
   font-size: large;
-  border: 2px solid #b3d3d3;
+  border: 2px solid #627272;
   justify-content: center;
   margin-left: 18px;
   margin-right: 18px;
@@ -494,6 +494,11 @@ header .name {
   margin-bottom: 80px;
   align-content: center;
   display: absolute;
+}
+
+header .name :hover {
+  background-color: #dfd8cb;
+  
 }
 
 header li {
@@ -593,7 +598,7 @@ padding: 8px;
 }
 
 .content img {
- padding: auto;
+ padding: 10px 0 0 0;
 }
 
 .content div:first-child {
