@@ -598,7 +598,8 @@ padding: 8px;
 }
 
 .content img {
- padding-top: 20px;
+ padding-top: 35px;
+ justify-content: center;
 }
 
 .content div:first-child {
