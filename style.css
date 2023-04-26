@@ -589,16 +589,12 @@ font-weight: bold;
 font-style: italic;
 color: #a77105;
 justify-content: center;
-padding: 15px;
+padding: 8px;
 }
 
 .content img {
- padding: 15px 60px;
+ padding: auto;
  position: absolute;
-}
-
-.content div {
-  flex: 1;
 }
 
 .content div:first-child {
