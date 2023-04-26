@@ -580,7 +580,7 @@ hr {
   display: flex;
   border:2px solid #0ca2a2;
   margin: 30px 150px;
-  
+  position: absolute;
 }
 
 .paragraph {
@@ -593,8 +593,7 @@ padding: 15px;
 }
 
 .content img {
- padding: 15px 80px;
- position: absolute;
+ padding: 15px 60px;
 }
 
 .content div {
