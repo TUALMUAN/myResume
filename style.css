@@ -626,9 +626,9 @@ padding: 8px;
   }
 
   .tab {
-    text-align: justify;
+    text-align: left;
     padding: 30px;
-    line-height: 18px;
+    line-height: 21px;
   }
 
   #experience {
