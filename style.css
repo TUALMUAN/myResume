@@ -580,7 +580,7 @@ hr {
   display: flex;
   border:2px solid #0ca2a2;
   margin: 30px 150px;
-  position: absolute;
+  position: relative;
 }
 
 .paragraph {
@@ -594,7 +594,6 @@ padding: 8px;
 
 .content img {
  padding: auto;
- position: absolute;
 }
 
 .content div:first-child {
