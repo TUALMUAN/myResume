@@ -443,16 +443,16 @@ body {
 
 @keyframes colorChange {
   0% {
-    color: rgb(20, 185, 50);
+    color: rgb(27, 245, 227);
   }
   33% {
-    color: rgb(69, 76, 72);
+    color: rgb(54, 59, 57);
   }
   66% {
-    color: rgb(12, 57, 101);
+    color: rgb(238, 226, 58);
   }
   100% {
-    color: rgb(248, 245, 245);
+    color: rgb(245, 248, 248);
   }
 }
 
@@ -521,7 +521,7 @@ header ul a {
 }
 
 .image-row {
-  justity-content: center;
+  justify-content: center;
 }
 
 .images {  
