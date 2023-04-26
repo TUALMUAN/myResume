@@ -594,6 +594,7 @@ padding: 15px;
 
 .content img {
  padding: 15px 60px;
+ position: absolute;
 }
 
 .content div {
