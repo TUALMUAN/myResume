@@ -598,7 +598,7 @@ padding: 8px;
 }
 
 .content img {
- padding-top: 35px;
+ padding-top: 31px;
  justify-content: center;
 }
 
@@ -675,7 +675,7 @@ padding: 8px;
 
 .contacts {
     border: 2px solid #000000;
-    background-color: #4a9fd4;
+    background-color: #19618d;
     color: azure;
     display:table;
     line-height: 30px;
