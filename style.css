@@ -195,6 +195,7 @@ margin: 10px 150px;
   margin: 30px 150px;
   position: relative;
   justify-content: center;
+  background-size:cover;
 }
 
 .paragraph {
