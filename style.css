@@ -431,30 +431,182 @@ padding: 8px;
     overflow: hidden;
   }
 
-  body {
-    max-width: 100%;
-    font-size: 12px;
-  }
-
-  /* Update margin for header */
-  header {
-    margin: auto;
-    padding: auto;
-  }
-
-  /* Update margin for images row */
-  .image-row {
-    margin: 0 25px;
-  }
-
-  /* Update margin for images */
-  .images {
-    margin: 0 73px;
-  }
-
-.text {
-  font-size: 12px;
+  /* Default styles for all screen sizes */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
+
+.resumeTitle h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 0.5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.name {
+  text-align: center;
+}
+
+.name h2 {
+  margin: 0;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.header ul li {
+  margin-right: 1rem;
+}
+
+.header ul li:last-child {
+  margin-right: 0;
+}
+
+.header ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.header ul li a:hover {
+  color: #0077cc;
+}
+
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.images div {
+  margin: 1rem;
+  text-align: center;
+}
+
+.images img {
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption.cap {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+.paragraph {
+  text-align: center;
+  margin-right: 1rem;
+}
+
+.paragraph p {
+  margin: 0;
+}
+
+.goal {
+  text-align: center;
+  margin-left: 1rem;
+}
+
+.goal img {
+  max-width: 100%;
+  height: auto;
+}
+
+.table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.table div {
+  margin: 1rem;
+  text-align: center;
+}
+
+.table img {
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption.tab {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+}
+
+/* Styles for screens with a width less than 768px */
+@media only screen and (max-width: 767px) {
+
+  .resumeTitle h1 {
+    font-size: 2rem;
+  }
+
+  .header ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header ul li {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .name {
+    order: -1;
+  }
+
+  .image-row {
+    flex-direction: column;
+  }
+
+  .images div {
+    margin: 0.5rem 0;
+  }
+
+  .paragraph {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .goal {
+    margin-left: 0;
+  }
+
+  .table div {
+    margin: 0.5rem 0;
+  }
+
 }
 
 @media only screen and (min-width: 1024px) {
