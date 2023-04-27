@@ -204,15 +204,13 @@ font-weight: bold;
 font-style: italic;
 color: #a77105;
 padding: 8px;
+margin-top: 15px;
 }
 
 .content img {
- padding-top: 10px;
+ padding: 10px;
  justify-content: center;
-}
-
-.content div:first-child {
-  text-align: center;
+ margin-left: 20px;
 }
 
 .table {
