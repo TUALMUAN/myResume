@@ -21,18 +21,20 @@ document.getElementById("dateDisplay").textContent = "Current Date: " + dateStri
 
 
 // JavaScript code to animate the website title
-var titleElement = document.getElementById('website-title');
-var translateY = -20;
+window.onload = function() {
+  var titleElement = document.getElementById('website-title');
+  var translateY = -20;
 
-function animateTitle() {
-    titleElement.style.transform = 'translate(-50%, -50%) translateY(' + translateY + 'px)';
-    translateY = -translateY;
-    setTimeout(function() {
-        animateTitle();
-    }, 2000);
+  function animateTitle() {
+      titleElement.style.transform = 'translate(-50%, -50%) translateY(' + translateY + 'px)';
+      translateY = -translateY;
+      setTimeout(function() {
+          animateTitle();
+      }, 2000);
+  }
+
+  animateTitle();
 }
-
-animateTitle();
 
 //slideshow of Certificates
 

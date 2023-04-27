@@ -2,12 +2,11 @@
 /* CSS styles for the main website */
 
 #website-title {
- 
-  top: 50%;
-  left: 50%;
+  position: absolute;
   transform: translate(-50%, -50%);
   transition: transform 2s ease-in-out;
 }
+
 body {
   
   font-family: Arial, sans-serif;
