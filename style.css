@@ -348,8 +348,6 @@ padding: 8px;
   body {
       overflow: hidden;
       font-size: 12px;
-      margin: auto;
-      padding: auto;
   }
 
   .resumeTitle h1 {
@@ -438,12 +436,8 @@ padding: 8px;
 }
 
 
-/* Styles for large screens */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-  /* Update margin and padding for body */
-
   
-  /* Default styles for all screen sizes */
 body {
   font-family: Arial, sans-serif;
   margin: auto;
