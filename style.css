@@ -679,7 +679,7 @@ padding: 8px;
 
 .contacts {
     border: 2px solid #000000;
-    background-color: #062d46;
+    background-color: rgb(62, 93, 109);
     color: azure;
     display:table;
     line-height: 30px;
