@@ -184,10 +184,6 @@ margin: 10px 150px;
   padding-right: 13px;
 }
 
-hr {
-  margin: 2% 30%;
-}
-
 .content {
   text-align: center;
   display: flex;
@@ -381,10 +377,6 @@ padding: 8px;
     margin-bottom: 1rem;
   }
 
-  .goal {
-    margin-left: 0;
-  }
-
   .table div {
     margin: 0.5rem 0;
   }
@@ -437,7 +429,7 @@ padding: 8px;
 
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-  
+
 body {
   font-family: Arial, sans-serif;
   margin: auto;
