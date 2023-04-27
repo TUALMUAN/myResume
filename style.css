@@ -504,6 +504,7 @@ header .name {
 
 header .name :hover {
   background-color: #f7f3ed;
+  padding: 3px;
 }
 
 header li {
@@ -513,7 +514,6 @@ header li {
 
 header ul :hover {
   background-color: #ffffff;
-  padding: 2px;
 }
 
 #about {
