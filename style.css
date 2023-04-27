@@ -513,7 +513,7 @@ header li {
 
 header ul :hover {
   background-color: #ffffff;
-  
+  padding: 2px;
 }
 
 #about {
