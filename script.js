@@ -1,4 +1,5 @@
 /*lock the website*/
+
 const overlay = document.getElementById('overlay');
 const form = overlay.querySelector('form');
 const passwordInput = form.querySelector('input[type="password"]');
@@ -8,7 +9,6 @@ form.addEventListener('submit', function(e) {
 
   if (passwordInput.value === '058724') {
     overlay.classList.remove('active');
-
   } else {
     alert('Invalid PIN. Please try again.');
   }
@@ -41,20 +41,6 @@ document.getElementById("dateDisplay").textContent = "Current Date: " + dateStri
 
 
 // JavaScript code to animate the website title
-window.onload = function() {
-  var titleElement = document.getElementById('website-title');
-  var translateY = -20;
-
-  function animateTitle() {
-      titleElement.style.transform = 'translate(-50%, -50%) translateY(' + translateY + 'px)';
-      translateY = -translateY;
-      setTimeout(function() {
-          animateTitle();
-      }, 2000);
-  }
-
-  animateTitle();
-}
 
 //slideshow of Certificates
 
