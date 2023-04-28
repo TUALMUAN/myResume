@@ -8,7 +8,7 @@ form.addEventListener('submit', function(e) {
 
   if (passwordInput.value === '058724') {
     overlay.classList.remove('active');
-    document.body.classListist.remove('locked');
+
   } else {
     alert('Invalid PIN. Please try again.');
   }

@@ -10,6 +10,7 @@
   z-index: 9999;
   display: flex;
   opacity: 1.5;
+  overflow: hidden;
 }
 
 #overlay.active {
