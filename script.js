@@ -9,7 +9,8 @@ form.addEventListener('submit', function(e) {
 
   if (passwordInput.value === '058724') {
     overlay.classList.remove('active');
-  } else {
+  } 
+  else {
     alert('Invalid PIN. Please try again.');
   }
 });
