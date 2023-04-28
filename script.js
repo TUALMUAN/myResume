@@ -1,4 +1,4 @@
-/*lock the website*/
+
 
 // Get the current date object
 const currentDate = new Date(); 
