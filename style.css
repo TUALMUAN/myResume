@@ -1,4 +1,7 @@
 /*lock screen part*/
+body.locked {
+  overflow: hidden;
+}
    
 #overlay {
   position: fixed;

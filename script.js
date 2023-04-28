@@ -9,6 +9,7 @@ form.addEventListener('submit', function(e) {
 
   if (passwordInput.value === '058724') {
     overlay.classList.remove('active');
+    document.body.classList.remove('locked');
   } 
   else {
     alert('Invalid PIN. Please try again.');
@@ -18,7 +19,7 @@ form.addEventListener('submit', function(e) {
 window.addEventListener('load', function() {
   overlay.classList.add('active');
 });
-
+document.body.classList.add('locked');
 
 // Get the current date object
 const currentDate = new Date(); 
