@@ -8,7 +8,7 @@
     <title id="website-title">My Personal Resume (Mr.Tual Khan Muan)</title>
     <link rel="icon" href="https://drive.google.com/uc?id=1kS8yIdSkOi2SP1Yd0ZR7NGwfW7ed1KUs" type="image/x-icon">
     <link rel="stylesheet" href="style.css" type="text/css">
-    <script src="script.js"></script>
+    <script src="title.js"></script>
 </head>
 
   <body>
@@ -234,19 +234,7 @@
     e.preventDefault();
     });
     </script>
-
-    <script>
-      var titleElement = document.getElementById('website-title');
-      var translateY = -20;
-      function animateTitle() {
-          titleElement.style.transform = 'translate(-50%, -50%) translateY(' + translateY + 'px)';
-          translateY = -translateY;
-          setTimeout(function() {
-              animateTitle();
-          }, 2000);
-      }
-      animateTitle();
-  </script>
+    
   </body>
   
 </html>
