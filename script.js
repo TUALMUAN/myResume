@@ -1,27 +1,5 @@
 /*lock the website*/
 
-const overlay = document.getElementById('overlay');
-const form = overlay.querySelector('form');
-const passwordInput = form.querySelector('input[type="password"]');
-
-form.addEventListener('submit', function(e) {
-  e.preventDefault();
-
-  if (passwordInput.value === '058724') {
-    overlay.classList.remove('active');
-    document.body.classList.remove('locked');
-  } 
-  else {
-    alert('Invalid PIN. Please try again.');
-  }
-});
-
-window.addEventListener('load', function() {
-  overlay.classList.add('active');
-  document.body.classList.add('locked');
-});
-
-
 // Get the current date object
 const currentDate = new Date(); 
 
