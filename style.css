@@ -1,3 +1,47 @@
+/*lock screen part*/
+    
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: none;
+}
+
+#overlay.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#overlay form {
+  background-color: rgb(243, 227, 227);
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#overlay input {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+#overlay button {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #0077FF;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
 
 /* CSS styles for the main website */
 
