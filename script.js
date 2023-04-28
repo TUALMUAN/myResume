@@ -53,7 +53,7 @@ var photos = [
   "https://drive.google.com/uc?id=1_wf9hgeYr4_9Y7DPZQ_LSur3fJSiB6O_",
   "https://drive.google.com/uc?id=19ZKcwQHjjW1KjfSHBVSITfmnPqyncv1Y"
    ];
-   https://drive.google.com/file/d/1vQREWnsRUl1qcyBVjXHMwKgvSKxD7GgV/view?usp=share_link 
+   
 var number = 0;
 
 function updatePhotos() {
