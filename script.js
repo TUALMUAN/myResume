@@ -1,4 +1,21 @@
 
+const overlay = document.getElementById('overlay');
+const form = overlay.querySelector('form');
+const passwordInput = form.querySelector('input[type="password"]');
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  if (passwordInput.value === '058724') {
+    overlay.style.display = 'none';
+  } else {
+    alert('Invalid PIN. Please try again.');
+  }
+});
+
+window.addEventListener('load', function() {
+  overlay.classList.add('active');
+});
 
 // Get the current date object
 const currentDate = new Date(); 
