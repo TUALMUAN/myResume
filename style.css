@@ -16,7 +16,7 @@
   border-radius: 4px;
 }
 
-body.locked {
+div.locked {
   overflow: hidden;
 }
 
@@ -30,7 +30,6 @@ body.locked {
   z-index: 9999;
   display: flex;
   opacity: 1;
-  
 }
 
 #overlay .active {
