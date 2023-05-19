@@ -16,7 +16,7 @@
   border-radius: 4px;
 }
 
-body .locked {
+body.locked {
   overflow: hidden;
 }
 
@@ -30,14 +30,14 @@ body .locked {
   z-index: 9999;
   display: flex;
   opacity: 1;
-  overflow:hidden;
+  
 }
 
 #overlay .active {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+  overflow: hidden;
 }
 
 #overlay form {
@@ -49,7 +49,7 @@ body .locked {
   margin: 10% 32%;
   opacity: 2;
   color:rgb(217, 227, 234);
-  overflow: hidden;
+  
 }
 
 #overlay input {
