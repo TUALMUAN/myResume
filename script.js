@@ -102,7 +102,6 @@ function updateAwards() {
     num = 0;
   }
 }
-
 setInterval(updateAwards, 3000);
 
 window.onscroll = function() { scrollFunction() };
