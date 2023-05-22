@@ -172,9 +172,9 @@ header .name {
 }
 
 header .name :hover {
-  background-color: #e3dbce;
-  color:rgb(20, 236, 236);
-  padding: 10px 10px;
+  background-color: #fcfaf8;
+  color:rgb(194, 247, 6);
+  filter: hue-rotate(-1);
 }
 
 header li {
