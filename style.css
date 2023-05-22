@@ -162,18 +162,19 @@ header .name {
   font-size: 18px;
   border: 1px solid #2a3131;
   justify-content: center;
-  position: relative;
+  position: absolute;
   align-content: center;
   display: inline-flex;
   padding-left: 4px;
   padding-right: 4px;
-  margin-left: 60px;
-  margin-right: 60px;
+  margin-left: 55px;
+  margin-right: 55px;
 }
 
 header .name :hover {
   background-color: #e3dbce;
-  padding: 3px;
+  color:rgb(20, 236, 236);
+  padding: 10px 10px;
 }
 
 header li {
