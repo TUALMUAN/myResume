@@ -24,10 +24,6 @@ html {
   border-radius: 4px;
 }
 
-.locked {
-  overflow: hidden;
-}
-
 #overlay {
   position: fixed;
   top: 0;
@@ -204,11 +200,14 @@ header ul a {
 
 .image-row {
   justify-content: center;
+  display: flex;
+  position: absolute;
+  padding: 20px 20px;
 }
 
 .images {  
   text-align: center;
-  position: relative;
+  position: absolute;
   display: flex;
   padding: 20px;
   border: 1px solid #accce0;
