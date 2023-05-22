@@ -2,7 +2,6 @@
 
 html {
   font-size: 16px;
-  scroll-behavior: smooth;
 }
 
 * {
@@ -117,6 +116,7 @@ hr {
   padding: 8px;
   font-style: italic;
   animation: colorChange 7s infinite;
+  margin-bottom:30px;
 }
 
 @keyframes colorChange {
@@ -178,8 +178,11 @@ header .name {
 
 header .name :hover {
   background-color: #fcfaf8;
-  color:rgb(194, 247, 6);
-  filter: hue-rotate(-1);
+  color:rgb(5, 90, 107);
+  padding:5%;
+  display: inline-flex;
+  font-size: 20px;
+  position: relative;
 }
 
 header li {
@@ -207,9 +210,9 @@ header ul a {
 .image-row {
   justify-content: center;
   display: flex;
-  position: absolute;
-  padding: 20px 20px;
-}
+  position: relative;
+  padding: 10px 10px;
+  }
 
 .images {  
   text-align: center;
@@ -227,7 +230,7 @@ header ul a {
   width: 355px;
   height: 340px;
   align-items: center;
-  padding: 30px;
+  padding: 25px;
 }
 
 .images .cap {
@@ -410,142 +413,144 @@ line-height: 35px;
     padding: 15px;
   }
 
+/* Mobile Styles */
+@media screen and (max-width: 767px) {
+  /* Adjust the styles for smaller screens */
+  body {
+    font-size: 14px;
+    line-height: 1.4;
+  }
 
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-  /*screen size codes*/
+  .menu {
+    display: none;
+  }
 
-@media only screen and (min-width: 250px) and (max-width: 600px) {
+  .resumeTitle h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0 auto;
-  padding: auto;
-  font-size: 8px;
-}
+  header {
+    text-align: center;
+  }
 
-.resumeTitle h1 {
-  text-align: center;
-  font-size: 1.5rem;
-  padding: auto;
-}
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: auto;
-}
+  .name {
+    margin-top: 10px;
+  }
 
-.name {
-  text-align: center;
-}
+  .name h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
 
-.name h2 {
-  margin: 0;
-}
+  .header ul {
+    margin-top: 20px;
+  }
 
-.header ul {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
+  .header ul li {
+    margin-bottom: 10px;
+  }
 
-.header ul li {
-  margin-right: 1rem;
-}
+  .image-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.header ul li:last-child {
-  margin-right: 0;
-}
+  .images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
 
-.header ul li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
+  .images div {
+    margin-bottom: 20px;
+  }
 
-.header ul li a:hover {
-  color: #0077cc;
-}
+  .images img {
+    width: 100%;
+    height: auto;
+  }
 
-.image-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+  .cap {
+    font-size: 14px;
+  }
 
-.images {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 100%;
-}
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.images div {
-  margin: 1rem;
-  text-align: center;
-}
+  .paragraph p {
+    margin-bottom: 10px;
+  }
 
-.images img {
-  max-width: 100%;
-  height: auto;
-}
+  .goal img {
+    width: 100%;
+    height: auto;
+  }
 
-figcaption.cap {
-  margin-top: 0.5rem;
-  font-size: 1rem;
-  font-style: italic;
-}
+  .table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  
-}
+  .table div {
+    margin-bottom: 20px;
+  }
 
-.paragraph {
-  text-align: center;
-  margin-right: 1rem;
-}
+  .tab {
+    font-size: 14px;
+  }
 
-.paragraph p {
-  margin: 0;
-}
+  .job-description {
+    padding-left: 15px;
+  }
 
-.goal {
-  text-align: center;
-  margin-left: 1rem;
-}
+  .job-description li {
+    list-style-type: disc;
+    margin-bottom: 10px;
+  }
 
-.goal img {
-  max-width: 100%;
-  height: auto;
-}
+  #dateDisplay {
+    text-align: center;
+    font-size: 14px;
+  }
 
-.table {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 100%;
-}
+  main {
+    padding: 10px;
+  }
 
-.table div {
-  margin: 1rem;
-  text-align: center;
-}
+  .note ul {
+    padding-left: 15px;
+  }
 
-.table img {
-  max-width: 100%;
-  height: auto;
-}
+  .note li {
+    list-style-type: disc;
+  }
 
-figcaption.tab {
-  margin-top: 0.5rem;
-  font-size: 1rem;
-  font-style: italic;
-}
+  .note p {
+    margin-bottom: 10px;
+  }
 
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
 }
