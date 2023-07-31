@@ -21,6 +21,10 @@
 </script>
   
   <body>
+    <div>
+      <button id="themeToggle">Toggle Dark Mode</button>
+    </div>
+    
     <button onclick="scrollToTop()" id="scrollBtn" title="Go to top">Scroll To Top</button>
     <div id="overlay">
       <form>
@@ -254,6 +258,38 @@
     e.preventDefault();
     });
     </script>
+
+    <button id="themeToggle">Toggle Dark Mode</button>
+
+  <script>
+    const themeToggle = document.getElementById('themeToggle');
+    const body = document.body;
+
+    themeToggle.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+    });
+  </script>
+  
+
+  <script>
+    const themeToggle = document.getElementById('themeToggle');
+    const body = document.body;
+
+    // Check if dark mode preference is saved in localStorage
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      body.classList.add('dark-mode');
+    }
+
+    themeToggle.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+      // Save the dark mode preference in localStorage
+      if (body.classList.contains('dark-mode')) {
+        localStorage.setItem('darkMode', 'enabled');
+      } else {
+        localStorage.setItem('darkMode', 'disabled');
+      }
+    });
+  </script>
   </body>
   
 </html>

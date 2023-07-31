@@ -1,0 +1,40 @@
+:root {
+    --primary-color: #007bff;   /* Blue color for primary elements */
+    --secondary-color: #6c757d; /* Gray color for secondary elements */
+    --background-color: #f8f9fa; /* Light background color */
+    --text-color: #333333;      /* Dark text color */
+  }
+  
+  /* Dark mode theme */
+  .dark-mode {
+    --primary-color: #17a2b8;   /* Alternate color for primary elements */
+    --background-color: #343a40; /* Dark background color */
+    --text-color: #f8f9fa;       /* Light text color */
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: var(--primary-color);
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Additional styles for other elements */
+  
