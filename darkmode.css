@@ -11,6 +11,10 @@
     --background-color: #343a40; /* Dark background color */
     --text-color: #f8f9fa;       /* Light text color */
   }
+
+#toggleTheme {
+    margin-right: 80%;
+}
   
   body {
     background-color: var(--background-color);
