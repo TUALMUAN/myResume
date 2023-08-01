@@ -27,7 +27,7 @@
     margin-bottom: 20px;
   }
   
-  #themeToggle, button {
+  #themeToggle button {
     background-color: var(--primary-color);
     color: #fff;
     padding: 10px 20px;
