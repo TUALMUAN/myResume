@@ -12,9 +12,9 @@
     --text-color: #f8f9fa;       /* Light text color */
   }
 
-div #themeToggle {
+  div #themeToggle {
     margin-right: 80%;
-}
+  }
   
   body {
     background-color: var(--background-color);
@@ -38,8 +38,7 @@ div #themeToggle {
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    margin-right: 80%;
-    margin-top: 1%;
+    
   }
   
   /* Additional styles for other elements */
