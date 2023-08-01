@@ -12,7 +12,7 @@
     --text-color: #f8f9fa;       /* Light text color */
   }
 
-#toggleTheme {
+#themeToggle {
     margin-right: 80%;
 }
   
@@ -23,7 +23,7 @@
     padding: 20px;
   }
   
-  h1 {
+  #themeToggle, h1 {
     color: var(--primary-color);
   }
   
