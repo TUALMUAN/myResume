@@ -12,7 +12,7 @@
     --text-color: #f8f9fa;       /* Light text color */
   }
 
-#themeToggle {
+div>#themeToggle {
     margin-right: 80%;
 }
   
@@ -31,7 +31,7 @@
     margin-bottom: 20px;
   }
   
-  button {
+  #themeToggle button {
     background-color: var(--primary-color);
     color: #fff;
     padding: 10px 20px;
