@@ -10,13 +10,10 @@
   margin-bottom: 50px;
 }
 
-
 .darkMode {
   padding: 20px;
   position: absolute;
-  margin-left: 90%;
-
-  
+  margin-left: 90%;  
 }
 
 .header-title> h2 {
@@ -41,9 +38,9 @@
   text-decoration: none;
 }
 
-.navigation :hover {
+.header-contents :hover {
   background-color: #76fafa;
-  color:#0c4067;
+  color:#057cd8;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
