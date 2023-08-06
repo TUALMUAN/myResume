@@ -35,7 +35,7 @@ const monthName = monthNames[monthIndex];
 const dateString = `${day} ${monthName}, ${year}`;
 
 // Display the current date string in the HTML element with id "dateDisplay"
-document.getElementById("dateDisplay").textContent = "Current Date: " + dateString;
+document.getElementById("dateDisplay").textContent = "Last Updated Date: " + dateString;
 
 
 // JavaScript code to animate the website title
@@ -120,3 +120,5 @@ window.onscroll = function() { scrollFunction() };
       document.body.scrollTop = 0; // For Safari
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
+
+    
