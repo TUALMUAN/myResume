@@ -13,7 +13,7 @@
 .darkMode {
   padding: 20px;
   position: absolute;
-  margin-left: 90%;  
+  margin-left: 80%;  
 }
 
 .header-title> h2 {
@@ -43,7 +43,6 @@
   color:#057cd8;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  padding: 5px;
 }
 
 .themeToggle {
