@@ -88,8 +88,7 @@ setInterval(updatePhotos, 3000);
 
 var awards = [
   "https://drive.google.com/uc?id=1gkjR8D7tS3UZcYLNNkYSKZyZPZ6GiUR6",
-  "https://drive.google.com/uc?id=1CVyaT6eX5Clpx4VJ3RIHlJBhDA8aF8e_",
-  "https://drive.google.com/uc?id=1DD7hDNYGnVDlE7prsMzq-p-mZZXhbw68"
+  "https://drive.google.com/uc?id=1CVyaT6eX5Clpx4VJ3RIHlJBhDA8aF8e_"
    ];
    
 var num = 0;
