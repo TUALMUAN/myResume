@@ -183,7 +183,7 @@ header> div {
   justify-content: center;
   align-items: center;
   margin-bottom: 60px;
-  flex-direction: row;
+  flex-direction: column;
   padding: 15px;
   
 }
