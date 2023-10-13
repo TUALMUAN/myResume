@@ -2,6 +2,12 @@
     /*smaller screen sizes*/
   
     @media (max-width: 768px) {
+
+      body {
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+      }
       
         .navigation {
       
@@ -493,6 +499,11 @@
     /*smaller screen sizes*/
   
     @media (max-width: 480px) {
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
       
         .navigation {
       
