@@ -205,7 +205,6 @@ header img {
   justify-content: center;
   align-content: center;
   display:flex;
-  flex-wrap: wrap;
   padding: 5px 5px;
   margin-left: 150px;
   margin-right: 150px;
