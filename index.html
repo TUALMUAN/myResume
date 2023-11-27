@@ -285,9 +285,11 @@
       // Save the dark mode preference in localStorage
       if (body.classList.contains('dark-mode')) {
         localStorage.setItem('darkMode', 'enabled');
-        themeToggle.src="https://drive.google.com/uc?id=1pTgG47D0mzH_o0yGh24-bEBPK30YltKG";
+        themeToggle.src="https://drive.google.com/uc?id=1v67Vdun8eGOT98DQtUaU9RqB3VWEUR0v"; 
       } else {
-        themeToggle.src="https://drive.google.com/uc?id=1v67Vdun8eGOT98DQtUaU9RqB3VWEUR0v";
+        localStorage.setItem('darkMode', 'disabled');
+        themeToggle.src="https://drive.google.com/uc?id=1pTgG47D0mzH_o0yGh24-bEBPK30YltKG";
+        
       }
     });
   </script>
