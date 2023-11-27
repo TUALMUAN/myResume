@@ -65,6 +65,7 @@ setInterval(updateImage, 3000);
 //slideshow of photos
 
 var photos = [
+  "https://drive.google.com/uc?id=1ELbtyYcJLwP8769IsFwCcB7D0Q6CArj2",
   "https://drive.google.com/uc?id=1vQREWnsRUl1qcyBVjXHMwKgvSKxD7GgV",
   "https://drive.google.com/uc?id=1hdKuVQtmcMmHctWMA3XomwvfUbHqmaR8",
   "https://drive.google.com/uc?id=1_wf9hgeYr4_9Y7DPZQ_LSur3fJSiB6O_",
