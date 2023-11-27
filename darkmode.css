@@ -27,10 +27,10 @@ body {
 button {
   background-color: var(--primary-color);
   color: #fff;
-  padding: 10px 20px;
+  padding: 7px 15px;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 10px;
   
 }
 
