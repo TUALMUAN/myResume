@@ -24,14 +24,12 @@ body {
 }*/
 
 
-button {
-  background-color: var(--primary-color);
-  color: #fff;
-  padding: 7px 15px;
-  border: none;
-  cursor: pointer;
-  border-radius: 10px;
-  
+#darkMode {
+  width: 3vw;
+  height: 6vh;
+  align-content: center;
+  justify-content: center;
+  display: inline-flex;
 }
 
 /* Additional styles for other elements */

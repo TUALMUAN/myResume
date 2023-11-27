@@ -35,8 +35,8 @@
           <h3 class="contact"><a href="#contact">Contact Me</a></h3>   
         </div>
   
-        <div class="darkMode">
-          <button id="themeToggle">Dark Mode</button>
+        <div>
+          <img id="darkMode" src="https://drive.google.com/uc?id=1pTgG47D0mzH_o0yGh24-bEBPK30YltKG" alt="darkmode">
         </div>
                
     </div>
@@ -272,7 +272,7 @@
     </script>
 
   <script>
-    const themeToggle = document.getElementById('themeToggle');
+    const themeToggle = document.getElementById('darkMode');
     const body = document.body;
 
     // Check if dark mode preference is saved in localStorage
@@ -285,8 +285,9 @@
       // Save the dark mode preference in localStorage
       if (body.classList.contains('dark-mode')) {
         localStorage.setItem('darkMode', 'enabled');
+        themeToggle.src="https://drive.google.com/uc?id=1pTgG47D0mzH_o0yGh24-bEBPK30YltKG";
       } else {
-        localStorage.setItem('darkMode', 'disabled');
+        themeToggle.src="https://drive.google.com/uc?id=1v67Vdun8eGOT98DQtUaU9RqB3VWEUR0v";
       }
     });
   </script>

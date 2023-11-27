@@ -7,12 +7,16 @@
   background-color: #0c6765;
   flex-direction: row;
   margin-bottom: 50px;
+  justify-items: center;
+  align-items: center;
 }
 
-.darkMode {
-  padding: 20px;
-  position: absolute;
-  margin-left: 85%;  
+#darkMode {
+  width: 3vw;
+  height: 6vh;
+  align-content: center;
+  justify-content: center;
+  display: inline-flex;
 }
 
 .header-title>h2 {
