@@ -11,6 +11,12 @@
   align-items: center;
 }
 
+div .header-contents {
+  margin-left: 10%;
+  display:flex;
+  flex-wrap: wrap;
+}
+
 #darkMode {
   width: 3vw;
   height: 6vh;
