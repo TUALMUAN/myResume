@@ -216,8 +216,8 @@ header img {
   align-content: center;
   display:flex;
   padding: 5px 5px;
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-left: 130px;
+  margin-right: 130px;
   position: relative;
   animation: borderTransition 0.5s infinite;
 }
