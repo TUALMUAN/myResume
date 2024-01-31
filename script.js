@@ -65,7 +65,7 @@ setInterval(updateImage, 3000);
 //slideshow of photos
 
 var photos = [
-  "https://drive.google.com/uc?id=1ELbtyYcJLwP8769IsFwCcB7D0Q6CArj2",
+  "https://github.com/TUALMUAN/Web-Images/blob/main/Copy%20of%20myphoto0001.jpg?raw=true",
   "https://drive.google.com/uc?id=1vQREWnsRUl1qcyBVjXHMwKgvSKxD7GgV",
   "https://drive.google.com/uc?id=1hdKuVQtmcMmHctWMA3XomwvfUbHqmaR8",
   "https://drive.google.com/uc?id=1_wf9hgeYr4_9Y7DPZQ_LSur3fJSiB6O_",
@@ -88,7 +88,7 @@ setInterval(updatePhotos, 3000);
 //slideshow of Awards
 
 var awards = [
-  "https://drive.google.com/uc?id=1gkjR8D7tS3UZcYLNNkYSKZyZPZ6GiUR6",
+  "https://github.com/TUALMUAN/Web-Images/blob/main/graduation%20day.jpg?raw=true",
   "https://drive.google.com/uc?id=1CVyaT6eX5Clpx4VJ3RIHlJBhDA8aF8e_"
    ];
    
