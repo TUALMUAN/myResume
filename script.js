@@ -43,10 +43,10 @@ document.getElementById("dateDisplay").textContent = "Last Updated Date: " + dat
 //slideshow of Certificates
 
 var certificates = [
-  "https://drive.google.com/uc?id=1L1ZIIAiVofPTNghzwEz9HDp-OQyHMTia",
-  "https://drive.google.com/uc?id=1DGCCoxK7DU6F34msMnqk2tCme3H3i99C",
-  "https://drive.google.com/uc?id=15WRjkj24IAIlOemi1vVUNosxiI8b5z9_",
-  "https://drive.google.com/uc?id=1YBGJijyR6Q8dS7XKUMhqyy3eW4pX7VcO"
+  "https://github.com/TUALMUAN/Web-Images/blob/main/Intermediate%20JavaScript%20Certificate.jpg?raw=true",
+  "https://github.com/TUALMUAN/Web-Images/blob/main/tualMuan058's%20profile%20_%20Codecademy%20HTML.jpg?raw=true",
+  "https://github.com/TUALMUAN/Web-Images/blob/main/Tual%20Muan%20Certificate%20of%20Google%20Digital%20Skills.jpg?raw=true",
+  "https://github.com/TUALMUAN/Web-Images/blob/main/Tual-Khan-Muan-American-University-new-Cert-C1-A4-long-names-1-34-July-3-2022.jpg?raw=true"
    ];
    
 var index = 0;
@@ -66,10 +66,10 @@ setInterval(updateImage, 3000);
 
 var photos = [
   "https://github.com/TUALMUAN/Web-Images/blob/main/Copy%20of%20myphoto0001.jpg?raw=true",
-  "https://drive.google.com/uc?id=1vQREWnsRUl1qcyBVjXHMwKgvSKxD7GgV",
-  "https://drive.google.com/uc?id=1hdKuVQtmcMmHctWMA3XomwvfUbHqmaR8",
-  "https://drive.google.com/uc?id=1_wf9hgeYr4_9Y7DPZQ_LSur3fJSiB6O_",
-  "https://drive.google.com/uc?id=19ZKcwQHjjW1KjfSHBVSITfmnPqyncv1Y"
+  "https://github.com/TUALMUAN/Web-Images/blob/main/Copy%20of%20myphoto0001.jpg?raw=true",
+  "https://github.com/TUALMUAN/Web-Images/blob/main/Copy%20of%20myphoto004.jpg?raw=true",
+  "https://github.com/TUALMUAN/Web-Images/blob/main/photo%20in%20coat.jpg?raw=true",
+  "https://github.com/TUALMUAN/Web-Images/blob/main/Copy%20of%20myphoto.jpg?raw=true"
    ];
    
 var number = 0;
@@ -88,8 +88,8 @@ setInterval(updatePhotos, 3000);
 //slideshow of Awards
 
 var awards = [
-  "https://github.com/TUALMUAN/Web-Images/blob/main/graduation%20day.jpg?raw=true",
-  "https://drive.google.com/uc?id=1CVyaT6eX5Clpx4VJ3RIHlJBhDA8aF8e_"
+  "https://github.com/TUALMUAN/Web-Images/blob/main/Intermediate%20JavaScript%20Certificate.jpg?raw=true",
+  "https://github.com/TUALMUAN/Web-Images/blob/main/tualMuan058's%20profile%20_%20Codecademy%20HTML.jpg?raw=true"
    ];
    
 var num = 0;
