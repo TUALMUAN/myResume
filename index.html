@@ -269,28 +269,28 @@
     });
     </script>
 
-  <script>
-    const themeToggle = document.getElementById('darkMode');
-    const body = document.body;
+<script>
+  const themeToggle = document.getElementById('darkMode');
+  const body = document.body;
 
-    // Check if dark mode preference is saved in localStorage
-    if (localStorage.getItem('darkMode') === 'enabled') {
-      body.classList.add('dark-mode');
+  // Check if dark mode preference is saved in localStorage
+  if (localStorage.getItem('darkMode') === 'enabled') {
+    body.classList.add('dark-mode');
+  }
+
+  themeToggle.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    // Save the dark mode preference in localStorage
+    if (body.classList.contains('dark-mode')) {
+      localStorage.setItem('darkMode', 'enabled');
+      themeToggle.src = "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/nightMode.png";
+    } else {
+      localStorage.setItem('darkMode', 'disabled');
+      themeToggle.src = "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/dayMode.png";
     }
+  });
+</script>
 
-    themeToggle.addEventListener('click', () => {
-      body.classList.toggle('dark-mode');
-      // Save the dark mode preference in localStorage
-      if (body.classList.contains('dark-mode')) {
-        localStorage.setItem('darkMode', 'enabled');
-        themeToggle.src="https://github.com/TUALMUAN/Web-Images/blob/main/nightMode.png?raw=true"; 
-      } else {
-        localStorage.setItem('darkMode', 'disabled');
-        themeToggle.src="/https://github.com/TUALMUAN/Web-Images/blob/main/dayMode.png?raw=true";
-        
-      }
-    });
-  </script>
   </body>
   
 </html>
