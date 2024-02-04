@@ -201,8 +201,8 @@ header> div {
 header img {
   
   border-radius: 8%;
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 220px;
   padding: 4px;
   border: 2px solid #db7337;
 }
@@ -349,10 +349,11 @@ justify-content: center;
 line-height: 35px;
 }
 
-.goal {
+.goal img {
  padding: 10px;
  justify-content: center;
- margin: auto;
+ height: 300px;
+ width: 350px;
  align-items: center;
 }
 
