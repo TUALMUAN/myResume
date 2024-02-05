@@ -4,7 +4,7 @@
     
   display:flex;
   flex-wrap: wrap;
-  background-color: #0c6765;
+  background-color:#08465d;
   flex-direction: row;
   margin-bottom: 50px;
   justify-items: center;
@@ -183,7 +183,7 @@ hr {
 }
 
 header> div {
-  background-color: #294951;
+  background-color: #08465d;
   text-align: center;
   max-width: 100%;
   margin-left: 130px;
@@ -467,7 +467,7 @@ line-height: 35px;
     text-align: justify;
     border: 2px solid #3c7d97;
     padding: 5px;
-    background-color: rgb(19, 81, 79);
+    background-color: rgb(1, 78, 94);
     margin: 5% 25%;
     line-height: 35px;
     color:#fff;
@@ -487,7 +487,7 @@ line-height: 35px;
   
   footer {
     text-align: center;
-    background-color: #283b3b;
+    background-color: #025353;
     color:#fff;
     padding: 15px;
   }

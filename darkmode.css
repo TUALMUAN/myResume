@@ -31,8 +31,3 @@ body {
   justify-content: center;
   display: inline-flex;
 }
-
-/* Additional styles for other elements */
-body a {
-  color: yellowgreen;
-}
