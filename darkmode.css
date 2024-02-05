@@ -22,7 +22,9 @@ body {
 /*h1 {
   color: var(--primary-color);
 }*/
-
+a {
+  color: #ed960a;
+}
 
 #darkMode {
   width: 3vw;
