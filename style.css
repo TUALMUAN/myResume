@@ -406,6 +406,7 @@ line-height: 35px;
   .job-description li {
     line-height: 40px;
     margin-right: 140px;
+    text-align: justify;
   }
 
   #education {
