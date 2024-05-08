@@ -4,7 +4,7 @@
     
   display:flex;
   flex-wrap: wrap;
-  background-color:#08465d;
+  background-color:#0b6180;
   flex-direction: row;
   margin-bottom: 50px;
   justify-items: center;
@@ -29,7 +29,7 @@ div .header-contents {
   margin-left: 40px;
   padding: 4px;
   border:#d4a44b solid 2px;
-  color:#0cdada;  
+  color:#02b9b9;  
   font-weight: bold;
 }
 .header-contents, h3> a {
@@ -41,7 +41,7 @@ div .header-contents {
   align-items: center;
   text-align: center;
   justify-content: center;
-  color:#daa024;
+  color:#f9af10;
   font-style: italic;
   font-size: 13px;
   text-decoration: none;
