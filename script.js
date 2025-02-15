@@ -89,7 +89,6 @@ setInterval(updateImage, 3000);
 var photos = [
   "https://github.com/TUALMUAN/Web-Images/blob/main/2025.2.15_Photo%201.jpg?raw=true",
   "https://github.com/TUALMUAN/Web-Images/blob/main/2025.2.15_Photo%202.jpg?raw=true",
-  "https://github.com/TUALMUAN/Web-Images/blob/main/2023myPhoto.jpg?raw=true",
   "https://github.com/TUALMUAN/Web-Images/blob/main/2025.2.15_Photo%204.jpg?raw=true",
   "https://github.com/TUALMUAN/Web-Images/blob/main/2025.2.15_Photo%204.jpg?raw=true"
    ];
