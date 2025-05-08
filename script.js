@@ -56,7 +56,7 @@ function updateMyPhotos() {
     index = 0;
   }
 }
-
+updateMyPhotos();
 setInterval(updateMyPhotos, 3000);
 
 
@@ -103,9 +103,8 @@ function updatePhotos() {
     number = 0;
   }
 }
-
-setInterval(updatePhotos, 3000);
 updatePhotos(); // show first photo immediately
+setInterval(updatePhotos, 3000);
 
 // Slideshow of Awards
 var awards = [
@@ -123,9 +122,9 @@ function updateAwards() {
     num = 0;
   }
 }
-
-setInterval(updateAwards, 3000);
 updateAwards(); // show first award immediately
+setInterval(updateAwards, 3000);
+
 
 window.onscroll = function() { scrollFunction() };
 
