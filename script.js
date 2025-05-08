@@ -42,7 +42,7 @@ document.getElementById("dateDisplay").textContent = "Last Updated Date: " + dat
 
 var myPhotos = [
 
-  "https://github.com/TUALMUAN/Web-Images/blob/main/2025.2.15_Photo%204.jpg?raw=true",
+  "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/2025.2.15_Photo%204.jpg",
    ];
    
 var index = 0;
@@ -62,12 +62,12 @@ setInterval(updateMyPhotos, 3000);
 //slideshow of Certificates
 
 var certificates = [
-  "https://github.com/TUALMUAN/Web-Images/blob/main/Intermediate%20JavaScript%20Certificate.jpg?raw=true",
-  "https://github.com/TUALMUAN/Web-Images/blob/main/tualMuan058's%20profile%20_%20Codecademy%20HTML.jpg?raw=true",
-  "https://github.com/TUALMUAN/Web-Images/blob/main/Tual%20Muan%20Certificate%20of%20Google%20Digital%20Skills.jpg?raw=true",
-  "https://github.com/TUALMUAN/Web-Images/blob/main/Tual-Khan-Muan-American-University-new-Cert-C1-A4-long-names-1-34-July-3-2022.jpg?raw=true"
-   ];
-   
+  "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/Intermediate%20JavaScript%20Certificate.jpg",
+  "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/tualMuan058's%20profile%20_%20Codecademy%20HTML.jpg",
+  "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/Tual%20Muan%20Certificate%20of%20Google%20Digital%20Skills.jpg",
+  "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/Tual-Khan-Muan-American-University-new-Cert-C1-A4-long-names-1-34-July-3-2022.jpg"
+];
+
 var index = 0;
 
 function updateImage() {
@@ -79,48 +79,53 @@ function updateImage() {
   }
 }
 
+// Start slideshow
+updateImage(); // show first image immediately
 setInterval(updateImage, 3000);
+
 
 //slideshow of photos
 
+// Slideshow of Photos
 var photos = [
-  "https://github.com/TUALMUAN/Web-Images/blob/main/2025.2.15_Photo%201.jpg?raw=true",
-  "https://github.com/TUALMUAN/Web-Images/blob/main/2025.2.15_Photo%202.jpg?raw=true",
-  "https://github.com/TUALMUAN/Web-Images/blob/main/2025.2.15_Photo%204.jpg?raw=true",
-  "https://github.com/TUALMUAN/Web-Images/blob/main/2025.2.15_Photo%204.jpg?raw=true"
-   ];
-   
+  "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/2025.2.15_Photo%201.jpg",
+  "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/2025.2.15_Photo%202.jpg",
+  "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/2025.2.15_Photo%204.jpg"
+];
+
 var number = 0;
 
 function updatePhotos() {
   var img = document.getElementById("slideshow");
   img.src = photos[number];
   number++;
-  if((number) == photos.length) {
+  if (number == photos.length) {
     number = 0;
   }
 }
 
 setInterval(updatePhotos, 3000);
+updatePhotos(); // show first photo immediately
 
-//slideshow of Awards
-
+// Slideshow of Awards
 var awards = [
-  "https://github.com/TUALMUAN/Web-Images/blob/main/Intermediate%20JavaScript%20Certificate.jpg?raw=true",
-  "https://github.com/TUALMUAN/Web-Images/blob/main/tualMuan058's%20profile%20_%20Codecademy%20HTML.jpg?raw=true"
-   ];
-   
+  "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/Intermediate%20JavaScript%20Certificate.jpg",
+  "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/tualMuan058's%20profile%20_%20Codecademy%20HTML.jpg"
+];
+
 var num = 0;
 
 function updateAwards() {
   var img = document.getElementById("awards");
   img.src = awards[num];
   num++;
-  if((num) == awards.length) {
+  if (num == awards.length) {
     num = 0;
   }
 }
+
 setInterval(updateAwards, 3000);
+updateAwards(); // show first award immediately
 
 window.onscroll = function() { scrollFunction() };
 
