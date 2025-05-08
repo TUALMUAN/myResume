@@ -371,7 +371,7 @@ line-height: 35px;
     flex-wrap: wrap;
     width: 300px;
     height: 300px;
-    position: relative;
+    position:absolute;
     padding: 14px;
     border: #069393 1px solid;
   }

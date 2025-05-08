@@ -60,7 +60,7 @@
 
   /* Tables */
   .table {
-      grid-template-columns: 1fr;
+      flex-wrap: wrap;
       gap: 20px;
   }
 
