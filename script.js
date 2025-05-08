@@ -41,8 +41,9 @@ document.getElementById("dateDisplay").textContent = "Last Updated Date: " + dat
 // JavaScript code to animate the website title
 
 var myPhotos = [
+  "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/2025.2.15_Photo%203.jpg",
   "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/2025.2.15_Photo%202.jpg",
-  "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/2025.2.15_Photo%204.jpg",
+  "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/2025.2.15_Photo%202.jpg",
    ];
    
 var index = 0;
@@ -62,7 +63,6 @@ setInterval(updateMyPhotos, 3000);
 //slideshow of Certificates
 
 var certificates = [
-  "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/Intermediate%20JavaScript%20Certificate.jpg",
   "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/tualMuan058's%20profile%20_%20Codecademy%20HTML.jpg",
   "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/Tual%20Muan%20Certificate%20of%20Google%20Digital%20Skills.jpg",
   "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/Tual-Khan-Muan-American-University-new-Cert-C1-A4-long-names-1-34-July-3-2022.jpg"
