@@ -364,6 +364,7 @@ line-height: 35px;
     justify-content: center;
     align-items: center;
     margin: 10px 150px;
+    position: relative;
   }
 
   .table img {
@@ -373,11 +374,13 @@ line-height: 35px;
     height: 300px;
     position:relative;
     padding: 14px;
+    justify-content: center;
+    align-items: center;
     border: #069393 1px solid;
   }
 
   .table div {
-    text-align: center;
+    text-align: justify;
     align-items: center;
     justify-content: center;
     position: relative;
