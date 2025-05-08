@@ -71,7 +71,7 @@ var certificates = [
 var index = 0;
 
 function updateImage() {
-  var img = document.getElementById("slideCertificates");
+  var img = document.getElementById("certificates");
   img.src = certificates[index];
   index++;
   if (index == certificates.length) {
@@ -96,7 +96,7 @@ var photos = [
 var number = 0;
 
 function updatePhotos() {
-  var img = document.getElementById("slideshow");
+  var img = document.getElementById("photos");
   img.src = photos[number];
   number++;
   if (number == photos.length) {
