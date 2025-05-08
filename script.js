@@ -41,7 +41,7 @@ document.getElementById("dateDisplay").textContent = "Last Updated Date: " + dat
 // JavaScript code to animate the website title
 
 var myPhotos = [
-
+  "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/2025.2.15_Photo%202.jpg",
   "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/2025.2.15_Photo%204.jpg",
    ];
    
