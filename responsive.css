@@ -214,7 +214,7 @@
 }
 
 /* Extra Small Screens */
-@media (max-width: 780px) {
+@media (max-width: 1280px) {
 
   body {
       font-size: 11px;
