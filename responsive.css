@@ -1,18 +1,5 @@
 /* Mobile-First Approach (Base styles for small screens) */
 /* Base (Mobile-First) Styles */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  font-size: 11px;
-  max-width: 100%;
-}
-
-/* Common Responsive Elements */
-img {
-  max-width: 100%;
-  height: auto;
-}
 
 /* Media Query: Small Devices & Portrait Tablets (<=780px) */
 @media (max-width: 780px) {
