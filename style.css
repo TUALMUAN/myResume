@@ -155,7 +155,7 @@ hr {
   flex-wrap: wrap;
   text-align: center;
   color: #eef2f4;
-  background-color: rgb(107, 185, 213);
+  background-color: rgb(95, 194, 230);
   margin-left: 30%;
   margin-right: 30%;
   font-weight: bold;
@@ -169,13 +169,13 @@ hr {
 
 @keyframes colorChange {
   0% {
-    color: rgb(221, 179, 11);
+    color: rgb(245, 197, 5);
   }
   33% {
-    color: rgb(54, 59, 57);
+    color: rgb(5, 186, 114);
   }
   66% {
-    color: rgb(11, 57, 131);
+    color: rgb(5, 80, 125);
   }
   100% {
     color: rgb(245, 248, 248);
