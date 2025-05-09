@@ -364,6 +364,8 @@ line-height: 35px;
   justify-content: center;
   gap: 20px; /* add spacing between items */
   margin: 10px 150px;
+  align-items: center;
+  align-content: center;
 }
 
 .table div {
@@ -381,7 +383,8 @@ line-height: 35px;
   height: 300px;
   padding: 14px;
   border: #069393 1px solid;
-  object-fit: cover;
+  object-fit:contain;
+
 }
 
 .table div:hover {
