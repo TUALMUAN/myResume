@@ -169,13 +169,13 @@ hr {
 
 @keyframes colorChange {
   0% {
-    color: rgb(245, 197, 5);
+    color: rgb(212, 170, 2);
   }
   33% {
-    color: rgb(5, 186, 114);
+    color: rgb(2, 109, 66);
   }
   66% {
-    color: rgb(5, 80, 125);
+    color: rgb(68, 2, 138);
   }
   100% {
     color: rgb(245, 248, 248);
@@ -186,8 +186,8 @@ header> div {
   background-color: #08465d;
   text-align: center;
   max-width: 100%;
-  margin-left: 130px;
-  margin-right: 130px;
+  margin-left: 120px;
+  margin-right: 120px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -199,7 +199,7 @@ header> div {
 }
 
 header img {
-  
+  margin-left: 20px;
   border-radius: 8%;
   width: 208px;
   height: 220px;
@@ -216,8 +216,8 @@ header img {
   align-content: center;
   display:flex;
   padding: 5px 5px;
-  margin-left: 130px;
-  margin-right: 130px;
+  margin-left: 100px;
+  margin-right: 100px;
   position: relative;
   animation: borderTransition 0.5s infinite;
 }
@@ -239,7 +239,7 @@ header img {
 }
 
 .name :hover {
-  background-color: #4c4e4f;
+  background-color: #dbecf5;
   color:rgb(240, 128, 8);
   padding:10px;
   font-size: 30px;
@@ -255,8 +255,8 @@ header li {
 }
 
 header ul :hover {
-  background-color: #ffffff;
-  color:#000000;
+  background-color: #6ab4f4;
+  color:#ffffff;
 }
 
 header ul a {
@@ -323,7 +323,6 @@ margin: 10px 150px;
 }
 
 .content {
-  text-align: center;
   display: flex;
   flex-wrap: wrap;
   border:1px solid #161514;
@@ -333,6 +332,7 @@ margin: 10px 150px;
   align-items: center;
   position: relative;
   transition: border-color 0.5s ease;
+  text-align: center;
 }
 
 .content :hover {
@@ -340,13 +340,12 @@ margin: 10px 150px;
 }
 
 .paragraph {
-text-align: center;
+text-align:center;
 font-weight: bold;
 font-style: italic;
-color: #a77105;
+color: #0c86ae;
 padding: 15px 45px;
-justify-content: center;
-line-height: 35px;
+line-height: 32px;
 }
 
 .goal img {
