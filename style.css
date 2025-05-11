@@ -18,8 +18,8 @@
   }
   
   #darkMode {
-    width: 3vw;
-    height: 6vh;
+    width: 2.5vw;
+    height: 5vh;
     align-content: center;
     justify-content: center;
     display: inline-flex;
@@ -396,7 +396,7 @@
   .table .tab {
     margin-top: 2%;
     font-size: 14px;
-    color: #333;
+    
   }
   
     .tab {
