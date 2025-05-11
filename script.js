@@ -103,7 +103,7 @@ var photos = [
   }
   
   updatePhotos(); // Show the first photo immediately
-  setInterval(updatePhotos, 3000); // Change every 3 seconds
+  setInterval(updatePhotos, 2000); // Change every 3 seconds
   
 
 // Slideshow of Awards
