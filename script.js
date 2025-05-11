@@ -84,28 +84,27 @@ function updateImage() {
 updateImage(); // show first image immediately
 setInterval(updateImage, 3000);
 
-
-//slideshow of photos
-
 // Slideshow of Photos
 var photos = [
-  "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/2025.2.15_Photo%201.jpg",
-  "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/2025.2.15_Photo%202.jpg",
-  "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/2025.2.15_Photo%204.jpg"
-];
-
-var number = 0;
-
-function updatePhotos() {
-  var img = document.getElementById("photos");
-  img.src = photos[number];
-  number++;
-  if (number == photos.length) {
-    number = 0;
+    "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/2025.2.15_Photo%201.jpg",
+    "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/selfie%201.jpg",
+    "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/pic%20in%20the%20office%201.jpg",
+    "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/pic%20in%20the%20office%202%20(2).jpg",
+    "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/pic%20in%20the%20office%204.jpg",
+    "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/selfie 1.jpg"
+  ];
+  
+  var number = 0;
+  
+  function updatePhotos() {
+    var img = document.getElementById("photos");
+    img.src = photos[number];
+    number = (number + 1) % photos.length;
   }
-}
-updatePhotos(); // show first photo immediately
-setInterval(updatePhotos, 3000);
+  
+  updatePhotos(); // Show the first photo immediately
+  setInterval(updatePhotos, 3000); // Change every 3 seconds
+  
 
 // Slideshow of Awards
 var awards = [
