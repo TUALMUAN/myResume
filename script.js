@@ -58,7 +58,7 @@ function updateMyPhotos() {
   }
 }
 updateMyPhotos();
-setInterval(updateMyPhotos, 3000);
+setInterval(updateMyPhotos, 2000);
 
 
 //slideshow of Certificates
