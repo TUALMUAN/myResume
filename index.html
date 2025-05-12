@@ -39,8 +39,9 @@
           <h3 class="contact"><a href="#contact">Contact Me</a></h3>   
         </div>
   
-        <div>
-          <img id="darkMode" src="https://github.com/TUALMUAN/Web-Images/blob/main/nightMode.png?raw=true" alt="darkmode">
+        <div id="themeSwitcher" style="display: flex; align-items: center; gap: 10px; margin: 20px;">
+          <img id="darkMode" src="https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/nightMode.png" style="cursor:pointer; width: auto;" />
+            <span id="modeLabel" style= "color:azure; font-size: .8em;">Light Mode</span>
         </div>
                
     </div>
@@ -323,25 +324,35 @@
 
 <script>
   const themeToggle = document.getElementById('darkMode');
+  const modeLabel = document.getElementById('modeLabel');
   const body = document.body;
 
-  // Check if dark mode preference is saved in localStorage
+  // Initialize mode from localStorage
   if (localStorage.getItem('darkMode') === 'enabled') {
     body.classList.add('dark-mode');
+    themeToggle.src = "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/dayMode.png";
+    modeLabel.textContent = "Dark Mode";
+  } else {
+    themeToggle.src = "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/nightMode.png";
+    modeLabel.textContent = "Light Mode";
   }
 
+  // Toggle dark mode on click
   themeToggle.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
-    // Save the dark mode preference in localStorage
     if (body.classList.contains('dark-mode')) {
       localStorage.setItem('darkMode', 'enabled');
       themeToggle.src = "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/dayMode.png";
+      modeLabel.textContent = "Dark Mode";
     } else {
       localStorage.setItem('darkMode', 'disabled');
       themeToggle.src = "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/nightMode.png";
+      modeLabel.textContent = "Light Mode";
     }
   });
 </script>
+
+
 
   </body>
   
