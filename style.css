@@ -263,6 +263,15 @@
     text-decoration: none;
     color: rgb(231, 170, 17);
   }
+
+  #photos {
+  width: 355px;
+  height: 340px;
+  transition: opacity 1s ease-in-out;
+}
+  #photos:hover {
+  opacity: 0.8; /* Adjust the opacity on hover */
+}
   
   .image-row {
     justify-content: center;

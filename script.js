@@ -84,7 +84,8 @@ function updateImage() {
 updateImage(); // show first image immediately
 setInterval(updateImage, 3000);
 
-// Slideshow of Photos
+//slideshow of photos
+
 var photos = [
   "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/2025.2.15_Photo%201.jpg",
   "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/selfie%201.jpg",
@@ -93,6 +94,12 @@ var photos = [
   "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/pic%20in%20the%20office%204.jpg",
   "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/selfie 1.jpg"
 ];
+
+// Preload images
+photos.forEach(function(photo) {
+  var img = new Image();
+  img.src = photo;
+});
 
 var number = 0;
 
