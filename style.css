@@ -454,7 +454,7 @@
      } 
      
     .firstPrize {
-      border: 3px solid #053141;
+      border: 3px solid #02a6e2;
       padding: 5px;
       display: inline-flex;
       margin:auto;
@@ -524,7 +524,7 @@
     
     footer {
       text-align: center;
-      background-color: #253f3f;
+      background-color: rgb(5, 80, 125);
       color:#fff;
       padding: 15px;
     }
