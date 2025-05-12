@@ -359,17 +359,17 @@
   }
   
   .table {
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* add spacing between items */
-    margin: 10px 150px;
-    align-items: center;
-    align-content: center;
-  }
-  
-  .table div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* add spacing between items */
+  padding: 10px;
+  margin: 10px 150px;
+  transition: border 0.3s ease;
+  justify-content: center;
+  justify-items: center;
+}
+
+.table div {
     display: flex;
     flex-direction:column; /* stack img + text */
     align-items: center;
@@ -378,37 +378,65 @@
     padding: 10px;
     transition: border 0.3s ease;
   }
-  
-  .table img {
-    width: 300px;
-    height: 300px;
-    padding: 14px;
+
+.table img {
+  width: 300px;
+  height: 300px;
+  padding: 14px;
+  border: #069393 1px solid;
+  object-fit:cover;
+
+}
+
+.table div:hover {
+  border: 1px solid #e8ac20;
+  border-radius: 8px;
+}
+
+  .tab1 {
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 10px;
+    line-height: 21px;
+    font-size: 15px;
+    text-align: cent;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 25px 40px;
     border: #069393 1px solid;
-    object-fit:contain;
+    align-items: center;
+    justify-content: center;
   
   }
-  
-  .table div:hover {
-    border: 1px solid #f0a206;
-    border-radius: 10px;
+
+  .tab2 {
+    text-align: left;
+    padding: 10px;
+    line-height: 21px;
+    font-size: 15px;
+    text-align: justify;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 25px 40px;
+    padding-bottom: 20%;
+    border: #069393 1px solid;
+    align-items: center;
+    justify-content: center;
   }
-  
-  .table .tab {
-    margin-top: 2%;
-    font-size: 14px;
-    
+
+  .tab3 {
+    text-align: left;
+    padding: 10px;
+    line-height: 21px;
+    font-size: 15px;
+    text-align: justify;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 25px 40px;
+    padding-bottom: 14%;
+    border: #069393 1px solid;
+    align-items: center;
+    justify-content: center;
   }
-  
-    .tab {
-      text-align: left;
-      padding: 10px;
-      line-height: 21px;
-      font-size: 15px;
-      font-family:Verdana, Geneva, Tahoma, sans-serif;
-      padding: 50px 50px;
-      border: #069393 1px solid;
-    }
-  
+
     #experience {
       line-height: 18px;
       margin: 10px 150px;
