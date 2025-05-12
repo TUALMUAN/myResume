@@ -99,11 +99,14 @@ var photos = [
   function updatePhotos() {
     var img = document.getElementById("photos");
     img.src = photos[number];
-    number = (number + 1) % photos.length;
+    number++;
+    if (index == photos.length) {
+    index = 0;
+  }
   }
   
   updatePhotos(); // Show the first photo immediately
-  setInterval(updatePhotos, 2000); // Change every 3 seconds
+  setInterval(updatePhotos, 2000); // Change every 2 seconds
   
 
 // Slideshow of Awards
