@@ -38,6 +38,10 @@ div .header-contents {
   font-weight: bold;
   flex-direction: row;
   display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: 1 rem;
 }
 
 .header-contents,
@@ -45,6 +49,7 @@ h3 > a {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  inline-size: auto;
   margin-left: 1.875rem; /* 30px */
   margin-right: 1.875rem; /* 30px */
   align-items: center;
@@ -85,9 +90,9 @@ hr {
   flex-wrap: wrap;
   text-align: center;
   color: #eef2f4;
-  background-color: rgb(95, 194, 230);
+  background-color: rgb(114, 211, 247);
   margin: auto;
-  margin: 5% 33%; 
+  margin: 5% 35%; 
   box-sizing: content-box;
   font-weight: bold;
   padding: 0.3125rem; /* 5px */
@@ -96,6 +101,7 @@ hr {
   font-size: 0.8rem; /* 16px */
   justify-content: center;
   border-width: 10cap;
+  border-radius: 0.75rem; /* 12px → 0.75rem */
 }
 
 @keyframes colorChange {
@@ -106,7 +112,7 @@ hr {
     color: rgb(2, 109, 66);
   }
   66% {
-    color: rgb(68, 2, 138);
+    color: rgb(5, 80, 125);
   }
   100% {
     color: rgb(245, 248, 248);
@@ -127,11 +133,12 @@ header > div {
   flex-direction: row;
   padding: 0.9375rem; /* 15px */
   border: 0.0625rem solid #dbe7eb;
+  border-radius: 0.75rem; /* 12px → 0.75rem */
+  gap:3rem;
 }
 
 header img {
-  margin: auto; /* 20px */
-  
+  gap: 3rem;
   border-radius: 8%;
   width: 13rem; /* 208px */
   height: 13.75rem; /* 220px */
@@ -153,7 +160,7 @@ header img {
   padding: 0.3125rem; /* 5px */
   margin: auto;
   margin-top: 8%;
-  position: relative;
+  
   animation: borderTransition 0.5s infinite;
 }
 
@@ -185,6 +192,7 @@ header li {
   display: flex; /* changed from "flexbox" */
   font-size: 0.89rem; /* 15px */
   text-align: justify;
+  margin: auto;
 }
 
 header ul :hover {
@@ -211,6 +219,7 @@ header ul a {
   justify-content: center;
   display: flex;
   position: relative;
+  border-radius: 0.75rem; /* 12px → 0.75rem */
 }
 
 .images {
@@ -220,16 +229,19 @@ header ul a {
   flex-wrap: wrap;
   padding: 1.25rem; /* 20px */
   border: 0.0625rem solid #accce0;
+  border-radius: 0.75rem; /* 12px → 0.75rem */
   background-color: rgb(62, 93, 109);
   max-width: 100%;
   justify-content: center;
+
 }
 
 .images img {
   width: 22.2rem; /* approx 355px */
   height: 21.25rem; /* approx 340px */
   align-items: center;
-  padding: 1.5625rem; /* 25px */
+  padding: 1.1625rem; /* 25px */
+  gap: 3rem; /* 20px → 1.25rem */
 }
 
 .images .cap {
@@ -250,6 +262,7 @@ header ul a {
   text-indent: 0;
   text-align: justify;
   border: 0.0625rem solid #000000;
+  border-radius: 0.75rem; /* 12px → 0.75rem */
   background-color: azure;
   line-height: 1.875rem; /* 30px */
   display: -webkit-inline-flex;
@@ -275,6 +288,9 @@ header ul a {
   transition: border-color 0.5s ease;
   text-align: center;
   background-color: azure;
+  border-radius: 0.75rem; /* 12px → 0.75rem */
+  overflow: hidden;
+  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1); /* 4px 6px */
 }
 
 .content :hover {
@@ -336,6 +352,7 @@ figure {
   text-align: left;
   background-color: #f9f9f9;
   color: #000000;
+  
 }
 
 .tab strong {
@@ -383,6 +400,7 @@ figure {
 
 .contacts {
   border: 0.125rem solid #e1e9ea; /* 2px */
+  border-radius: 0.75rem; /* 12px → 0.75rem */
   background-color: rgb(62, 93, 109);
   color: azure;
   display: table;
@@ -414,6 +432,7 @@ figure {
 .note {
   text-align: justify;
   border: 0.125rem solid #eff4f5; /* 2px */
+  border-radius: 0.75rem; /* 12px → 0.75rem */
   padding: 0.3125rem; /* 5px */
   background-color: rgb(62, 93, 109);
   margin: 5% 25%;
@@ -452,14 +471,14 @@ footer {
   bottom: 1.25rem; /* 20px */
   right: 1.875rem; /* 30px */
   z-index: 99;
-  font-size: 0.9375rem; /* 15px */
+  font-size: 0.8375rem; /* 15px */
   border: none;
   outline: none;
   background-color: #555;
   color: white;
   cursor: pointer;
   padding: 0.8125rem; /* 13px */
-  border-radius: 0.25rem; /* 4px */
+  border-radius: 0.27rem; /* 4px */
 }
 
 #overlay {
@@ -473,7 +492,6 @@ footer {
   display: flex;
   opacity: 1;
   overflow: hidden;
-  backdrop-filter: blur(1.25rem); /* 20px */
 }
 
 #overlay .active {
@@ -485,7 +503,7 @@ footer {
 #overlay form {
   background-color: rgb(7, 59, 96);
   padding: 1.25rem; /* 20px */
-  border-radius: 0.3125rem; /* 5px */
+  border-radius: 0.75rem; /* 12px → 0.75rem */
   text-align: center;
   position: fixed;
   margin: 10% 32%;
@@ -525,8 +543,8 @@ footer {
   #hobbies,
   .contacts,
   .note {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
   }
   
   header img,
