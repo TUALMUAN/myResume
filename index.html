@@ -50,7 +50,7 @@
   
         <div id="themeSwitcher" style="display: flex; align-items: center; gap: 10px; margin: 20px;">
           <img id="darkMode" src="https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/nightMode.png" style="cursor:pointer; width: auto; filter: brightness(1.1);" />
-            <span id="modeLabel" style= "color:azure; font-size: .8em;">Light Mode</span>
+            <span id="modeLabel" style= "color:azure; font-size: 0.8em; cursor: pointer;">Light Mode</span>
         </div>      
     </div>
      
@@ -300,8 +300,7 @@
           </li>
         </ul>
       </section>
-      
-      
+            
     </main>
     <br>
   <hr>
@@ -335,17 +334,8 @@
   const modeLabel = document.getElementById('modeLabel');
   const body = document.body;
 
-  // Initialize mode from localStorage
-  if (localStorage.getItem('darkMode') === 'enabled') {
-    body.classList.add('dark-mode');
-    themeToggle.src = "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/nightMode.png";
-    modeLabel.textContent = "Dark Mode";
-  } else {
-    themeToggle.src = "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/dayMode.png";
-    modeLabel.textContent = "Light Mode";
-  }
-  // Toggle dark mode on click
-  themeToggle.addEventListener('click', () => {
+  // Shared toggle function
+  function toggleTheme() {
     body.classList.toggle('dark-mode');
     if (body.classList.contains('dark-mode')) {
       localStorage.setItem('darkMode', 'enabled');
@@ -356,8 +346,23 @@
       themeToggle.src = "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/dayMode.png";
       modeLabel.textContent = "Light Mode";
     }
-  });
+  }
+
+  // Initialize mode from localStorage
+  if (localStorage.getItem('darkMode') === 'enabled') {
+    body.classList.add('dark-mode');
+    themeToggle.src = "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/nightMode.png";
+    modeLabel.textContent = "Dark Mode";
+  } else {
+    themeToggle.src = "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/dayMode.png";
+    modeLabel.textContent = "Light Mode";
+  }
+
+  // Make both image and text clickable
+  themeToggle.addEventListener('click', toggleTheme);
+  modeLabel.addEventListener('click', toggleTheme);
 </script>
+
 
   </body>
   
