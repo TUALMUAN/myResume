@@ -521,6 +521,8 @@ footer {
   display: flex;
   opacity: 1;
   overflow: hidden;
+  align-items: center;  
+  justify-content: center;
 }
 
 #overlay .active {
@@ -535,9 +537,11 @@ footer {
   border-radius: 0.75rem; /* 12px → 0.75rem */
   text-align: center;
   position: fixed;
-  margin: 10% 32%;
+  margin: auto;
   opacity: 2;
   color: rgb(217, 227, 234);
+  align-items: center;  
+  justify-content: center;
 }
 
 #overlay input {
