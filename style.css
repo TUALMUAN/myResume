@@ -585,4 +585,22 @@ footer {
     width: 100%;
     height: auto;
   }
+
+  .resumeTitle {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  color: #eef2f4;
+  background-color: rgb(114, 211, 247);
+  margin: auto;
+  margin: 2.8% 25%; 
+  font-weight: bold;
+  font-style: italic;
+  animation: colorChange 7s infinite;
+  font-size: 1.2rem; /* 16px */
+  justify-content: center;
+  border-radius: 0.75rem; /* 12px → 0.75rem */
+  padding: 0.15rem; /* 10px */
+  }
+  
 }
