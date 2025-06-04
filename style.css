@@ -536,7 +536,6 @@ footer {
   padding: 1.25rem; /* 20px */
   border-radius: 0.75rem; /* 12px → 0.75rem */
   text-align: center;
-  position: fixed;
   margin: auto;
   opacity: 2;
   color: rgb(217, 227, 234);
