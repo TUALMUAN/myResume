@@ -124,7 +124,7 @@ hr {
   padding: 0.3125rem; /* 5px */
   font-style: italic;
   animation: colorChange 7s infinite;
-  font-size: 0.8rem; /* 16px */
+  font-size: 0.85rem; /* 16px */
   justify-content: center;
   border-width: 10cap;
   border-radius: 0.75rem; /* 12px → 0.75rem */
@@ -593,14 +593,14 @@ footer {
   color: #eef2f4;
   background-color: rgb(114, 211, 247);
   margin: auto;
-  margin: 2.8% 25%; 
+  margin: 2.8% 23%; 
   font-weight: bold;
   font-style: italic;
   animation: colorChange 7s infinite;
-  font-size: 1.2rem; /* 16px */
+  font-size: .85rem; /* 16px */
   justify-content: center;
   border-radius: 0.75rem; /* 12px → 0.75rem */
   padding: 0.15rem; /* 10px */
   }
-  
+
 }
