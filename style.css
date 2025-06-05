@@ -126,7 +126,7 @@ hr {
   padding: 0.3125rem; /* 5px */
   font-style: italic;
   animation: colorChange 7s infinite;
-  font-size: 1rem; /* 16px */
+  font-size: 1.7rem; /* 16px */
   justify-content: center;
   border-width: 10cap;
   border-radius: 0.75rem; /* 12px → 0.75rem */
