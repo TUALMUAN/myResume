@@ -117,13 +117,13 @@ hr {
   text-align: center;
   color: #eef2f4;
   background-color: rgb(114, 211, 247);
-  margin-top: 2.4%;
+  margin-top: 2.2%;
   margin-bottom: 2.8%;
   margin-right: 35%;
   margin-left: 35%; 
   box-sizing: content-box;
   font-weight: bold;
-  padding: 0.3125rem; /* 5px */
+  padding: 0.2125rem; /* 5px */
   font-style: italic;
   animation: colorChange 7s infinite;
   font-size: 1.7rem; /* 16px */
