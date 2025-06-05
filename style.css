@@ -577,8 +577,8 @@ footer {
   #hobbies,
   .contacts,
   .note {
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
   }
   
   header img,
@@ -595,7 +595,7 @@ footer {
   color: #eef2f4;
   background-color: rgb(114, 211, 247);
   margin: auto;
-  margin: 2.8% 23%; 
+  margin: 2.8% 24%; 
   font-weight: bold;
   font-style: italic;
   animation: colorChange 7s infinite;
