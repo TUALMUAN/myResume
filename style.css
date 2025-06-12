@@ -119,8 +119,8 @@ hr {
   background-color: rgb(114, 211, 247);
   margin-top: 2.2%;
   margin-bottom: 2.8%;
-  margin-right: 35%;
-  margin-left: 35%; 
+  margin-right: 38%;
+  margin-left: 38%; 
   box-sizing: content-box;
   font-weight: bold;
   padding: 0.2125rem; /* 5px */
@@ -151,12 +151,13 @@ header > div {
   background-color: #08465d;
   text-align: center;
   max-width: 100%;
-  margin-left: 7.5rem; /* 120px */
-  margin-right: 7.5rem; /* 120px */
+  margin-left: 9.5rem; /* 120px */
+  margin-right: 9.5rem; /* 120px */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  align-content: center;
   margin-bottom: 3.75rem; /* 60px */
   flex-direction: row;
   padding: 0.9375rem; /* 15px */
@@ -175,6 +176,9 @@ header img {
   justify-content: center;
   align-items: center;
   align-content: center;
+  margin-left: 3rem; /* 30px */
+  margin-right: auto;
+  ;
 }
 
 .name {
@@ -221,6 +225,7 @@ header li {
   font-size: 0.89rem; /* 15px */
   text-align: justify;
   margin: auto;
+  margin-right: 2.4rem; /* 10px */
 }
 
 header ul :hover {
@@ -588,6 +593,22 @@ footer {
     height: auto;
   }
 
+  header img {
+    gap: 3rem;
+    border-radius: 8%;
+    width: 13rem; /* 208px */
+    height: 13.75rem; /* 220px */
+    padding: 0.15rem; /* 4px */
+    border: 0.125rem solid #db7337; /* 2px */
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 2.4rem; /* 30px */
+    margin-right: 2.4rem;
+    margin-top: 2rem;
+    ;
+  }
+  
   .resumeTitle {
   display: flex;
   flex-wrap: wrap;
