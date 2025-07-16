@@ -6,7 +6,7 @@ const passwordInput = form.querySelector('input[type="password"]');
 form.addEventListener('submit', function(e) {
   e.preventDefault();
 
-  if (passwordInput.value === '058724') {
+  if (passwordInput.value === '00000') {
     overlay.style.display = 'none';
   } else {
     alert('Invalid PIN. Please try again.');

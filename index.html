@@ -95,12 +95,12 @@
      
     <button onclick="scrollToTop()" id="scrollBtn" title="Go to top">Scroll To Top</button>
     
-    <div id="overlay">
-      <form>
+    <div>
+      <form id="login-form">
         <h4>Please use the PIN provided in my job application.</h4>
         <h4>Please browse in <span style="color: rgb(236, 233, 6);">DESKTOP</span> for better view.</h4>
         <h4>Thank you for visiting my Resume's website.</h4>
-        <input type="password" placeholder="Enter the PIN" required>
+        <input type="password" id="pin-input" placeholder="Enter the PIN" required>
         <button type="submit">Submit</button>
       </form>
     </div>
@@ -416,6 +416,29 @@
   modeLabel.addEventListener('click', toggleTheme);
 </script>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script>
+  const supabaseUrl = 'https://hdsepxgoerejvtvzqpil.supabase.co';
+  const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imhkc2VweGdvZXJlanZ0dnpxcGlsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTI2NDkwOTUsImV4cCI6MjA2ODIyNTA5NX0.RRU8zQCELzeEN_hc9hcVnMZ-S58Ft-U4ZilQVMjN9ZU';
+  const supabase = supabase.createClient(supabaseUrl, supabaseKey);
+
+  document.getElementById('login-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const pin = document.getElementById('pin-input').value;
+
+    const { data, error } = await supabase
+      .from('users')
+      .select('*')
+      .eq('pin', pin)
+      .single();
+
+    if (data) {
+      alert("Login Success! Welcome " + data.name);
+    } else {
+      alert("Invalid PIN");
+    }
+  });
+</script>
 
   </body>
   
