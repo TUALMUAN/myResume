@@ -517,7 +517,7 @@ footer {
   border-radius: 0.27rem; /* 4px */
 }
 
-#overlay {
+#login-form {
   position: fixed;
   top: 0;
   left: 0;
@@ -532,13 +532,13 @@ footer {
   justify-content: center;
 }
 
-#overlay .active {
+#login-form .active {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#overlay form {
+#login-form {
   background-color: rgb(7, 59, 96);
   padding: 1.25rem; /* 20px */
   border-radius: 0.75rem; /* 12px → 0.75rem */
@@ -550,7 +550,7 @@ footer {
   justify-content: center;
 }
 
-#overlay input {
+#login-form input {
   padding: 0.625rem; /* 10px */
   margin: 0.625rem; /* 10px */
   border-radius: 0.3125rem; /* 5px */
@@ -558,7 +558,7 @@ footer {
   font-size: 1rem; /* 16px */
 }
 
-#overlay button {
+#login-form button {
   padding: 0.625rem; /* 10px */
   margin: 0.625rem; /* 10px */
   border-radius: 0.3125rem; /* 5px */
