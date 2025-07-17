@@ -1,12 +1,12 @@
 
-const overlay = document.getElementById('login-form');
+/*const overlay = document.getElementById('login-form');
 const form = overlay.querySelector('form');
 const passwordInput = form.querySelector('input[type="password"]');
 
 form.addEventListener('submit', function(e) {
   e.preventDefault();
 
-  if (passwordInput.value === '0000') {
+  if (passwordInput.value === '146872') {
     overlay.style.display = 'none';
   } else {
     alert('Invalid PIN. Please try again.');
@@ -15,7 +15,7 @@ form.addEventListener('submit', function(e) {
 
 window.addEventListener('load', function() {
   overlay.classList.add('active');
-});
+});*/
 
 // JavaScript code to animate the website title
 
