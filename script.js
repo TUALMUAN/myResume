@@ -68,10 +68,7 @@ setInterval(updateImage, 3000);
 var photos = [
   "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/2025.2.15_Photo%201.jpg",
   "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/selfie%201.jpg",
-  "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/pic%20in%20the%20office%201.jpg",
-  "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/pic%20in%20the%20office%202%20(2).jpg",
-  "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/pic%20in%20the%20office%204.jpg",
-  "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/selfie 1.jpg"
+  "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/pic%20in%20the%20office%202%20(2).jpg"
 ];
 
 // Preload images
