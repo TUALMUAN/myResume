@@ -5,52 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta http-equiv="Content-Security-Policy"
-      content="
-        default-src 'self';
-        img-src 'self'
-                https://raw.githubusercontent.com
-                https://*.googleusercontent.com
+    <meta http-equiv="Content-Security-Policy" 
+  content="
+    default-src 'self';
+    img-src 'self'
+            https://raw.githubusercontent.com
+            https://*.googleusercontent.com
+            https://*.google.com
+            https://*.gstatic.com
+            https://translate.googleapis.com
+            data:;
+    script-src 'self'
+               'unsafe-inline'
+               'unsafe-eval'
+               https://cdn.jsdelivr.net
+               https://code.jquery.com
+               https://*.google.com
+               https://*.googleapis.com
+               https://*.gstatic.com
+               blob:;
+    style-src 'self'
+              'unsafe-inline'
+              https://fonts.googleapis.com
+              https://cdn.jsdelivr.net
+              https://*.google.com
+              https://*.googleapis.com
+              https://*.gstatic.com;
+    font-src 'self'
+             https://fonts.gstatic.com;
+    connect-src 'self'
+                https://hdsepxgoerejvtvzqpil.supabase.co
                 https://*.google.com
+                https://*.googleapis.com
                 https://*.gstatic.com
-                https://translate.googleapis.com
+                https://www.googletagmanager.com
+                https://cdn.jsdelivr.net
+                https://formspree.io
+                blob:
                 data:;
-        script-src 'self'
-                   'unsafe-inline'
-                   'unsafe-eval'
-                   https://cdn.jsdelivr.net
-                   https://code.jquery.com
-                   https://*.google.com
-                   https://*.googleapis.com
-                   https://*.gstatic.com
-                   blob:;
-        style-src 'self'
-                  'unsafe-inline'
-                  https://fonts.googleapis.com
-                  https://cdn.jsdelivr.net
-                  https://*.google.com
-                  https://*.googleapis.com
-                  https://*.gstatic.com;
-        font-src 'self'
-                 https://fonts.gstatic.com;
-        connect-src 'self'
-                    https://hdsepxgoerejvtvzqpil.supabase.co
-                    https://*.google.com
-                    https://*.googleapis.com
-                    https://*.gstatic.com
-                    https://www.googletagmanager.com
-                    https://cdn.jsdelivr.net
-                    blob:
-                    data:;
-        frame-src 'self'
-                  https://*.google.com;
-        worker-src 'self'
-                   blob:
-                   https://*.google.com
-                   https://*.googleapis.com;
-        object-src 'none';
-        base-uri 'self';
-      " />
+    frame-src 'self'
+              https://*.google.com;
+    worker-src 'self'
+               blob:
+               https://*.google.com
+               https://*.googleapis.com;
+    object-src 'none';
+    base-uri 'self';
+  " 
+/>
          
     <title id="website-title">My Resume (Mr.Tual Khan Muan)</title>
     <link rel="icon" href="https://drive.google.com/uc?id=1kS8yIdSkOi2SP1Yd0ZR7NGwfW7ed1KUs" type="image/x-icon">
@@ -71,26 +73,30 @@
   
   <body>
 
-    <div class="navigation">
-      <div class="header-title">
-        <h2 class="header-title">My Personal Website</h2>
-        </div>
-        <div class="header-contents">
-          <h3 class="about"><a href="https://drive.google.com/file/d/1vlxo8ahuu_KSuhSF8puS-IjS-HufeYq1/view?usp=sharing" target="_blank" 
-            style="color:rgb(255, 255, 0) !important; transition: color 0.3s;" 
-            onmouseover="this.style.color='rgb(4, 236, 95)'; this.textContent='PDF File'" 
-            onmouseout="this.style.color='rgb(255, 255, 0)'; this.textContent='CV/Resume'">CV/Resume</a></h3> 
-          <h3 class="education"><a href="#education">Education</a></h3>
-          <h3 class="experience"><a href="#experience">Experiences</a></h3>
-          <h3 class="skills"><a href="#skills">Qualifications</a></h3> 
-          <h3 class="contact"><a href="#contact">Contact Me</a></h3>   
-        </div>
-  
-        <div id="themeSwitcher" style="display: flex; align-items: center; gap: 10px; margin: 20px;">
-          <img id="darkMode" src="https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/nightMode.png" style="cursor:pointer; width: auto; filter: brightness(1.1);" />
-            <span id="modeLabel" style= "color:azure; font-size: 0.8em; cursor: pointer;">Light Mode</span>
-        </div>      
-    </div>
+   <nav class="navigation">
+  <div class="header-title">
+    <h2>My Personal Website</h2>
+  </div>
+
+  <div class="nav-links">
+    <a id="cvLink" href="https://drive.google.com/file/d/1vlxo8ahuu_KSuhSF8puS-IjS-HufeYq1/view?usp=sharing" target="_blank">CV/Resume</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experiences</a>
+    <a href="#skills">Qualifications</a>
+    <a href="#contact">Contact Me</a>
+  </div>
+
+  <div id="themeSwitcher">
+    <img id="darkMode" src="https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/nightMode.png" alt="Toggle Theme" />
+    <span id="modeLabel">Light Mode</span>
+  </div>
+
+  <div class="google-translate">
+    <p>Switch Language:</p>
+    <div id="google_translate_element"></div>
+  </div>
+</nav>
+
      
     <button onclick="scrollToTop()" id="scrollBtn" title="Go to top">Scroll To Top</button>
     
@@ -103,11 +109,7 @@
         <button type="submit">Submit</button>
       </form>
     </div>
-    
-    <div class="google-translate">
-      <p>Switch Language:</p>
-      <div id="google_translate_element"></div>
-    </div>
+
     <script>
       function googleTranslateElementInit() {
       new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
@@ -193,8 +195,13 @@
      </div>
      <hr>
      <br>
+    <section class="why-section">
+      <div class="flip-box">
+      <div class="flip-text">Why Choose Me?</div>
+      </div>
+    </section>
 
-<div class="table">
+  <div class="table">
   <div class="card">
     <figure>
       <img src="https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/experience.jpg" alt="My Experience" />
@@ -274,7 +281,7 @@
         <h2 id="underline">Education</h2>
         <ul>
           <li>
-            <h4>Certificates in Business Development, Financial Management, and Digital Transformation (<a href="https://drive.google.com/file/d/1uayUBxr9bE9-dbN8AqT5CPPrl46zFazW/view?usp=sharing" target="blank">Certificates</a> awarded by <span style="color:rgb(4, 198, 242);">United Nations Development Programme, UNDP Myanmar</span>)</h4>
+            <h4>Certificates in Business Development, Financial Management, and Digital Transformation (<a href="https://drive.google.com/file/d/1uayUBxr9bE9-dbN8AqT5CPPrl46zFazW/view?usp=sharing" target="blank">Certificate</a> awarded by <span style="color:rgb(4, 198, 242);">United Nations Development Programme, UNDP Myanmar</span>)</h4>
             <h4>Completed in 2025</h4>
             <hr style="margin-left:0;">
             <h4>Diploma in Business Management (<a href="https://drive.google.com/file/d/1Rrb8BL5EXOE73Eh40m9rsTzgAT7to6Ej/view?usp=sharing" target="blank">Executive Diploma</a> awarded by ATBC International College)</h4>
@@ -323,39 +330,58 @@
       </section>
       <hr>
       <br>
-      <section class="contacts">
-        <h2 id="underline">Contact Me</h2>
-        <ul id="contact">
-          <li>Email: andrewtualmuan@gmail.com</li>
-          <li>Mobile Phone: +95 9 254 852 641</li>
-          <li>
-            LinkedIn: 
-            <a id="linkedin1" href="https://www.linkedin.com/in/tual-muan-b1a825130/" target="_blank">
-              (LinkedIn Profile)
-              <span>
-                <img src="https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/linkedIn%20img.png" alt="LinkedIn" />
-              </span>
-            </a>
-          </li>
-          <li style="color: rgb(252, 252, 4);">
-            To view my CV/Resume in PDF file,
-            <a id="cv" href="https://drive.google.com/file/d/1vlxo8ahuu_KSuhSF8puS-IjS-HufeYq1/view?usp=sharing" target="_blank" style="color: rgb(249, 103, 19);">
-              please click here.
-            </a>
-          </li>
-        </ul>
-      
-        <h2 id="underline">Address</h2>
-        <ul>
-          <li>
-            No.48, Bayinnaung 2 lane 1, Mayangone Township, Yangon <strong>(11061)</strong>, Myanmar.
-          </li>
-        </ul>
-      </section>   
+
+  <section id="contact" class="contact-section">
+  <h2 class="contact-title">Contact Me</h2>
+
+  <div class="contact-container">
+    
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <ul>
+        <li><strong>Email:</strong> andrewtualmuan@gmail.com</li>
+        <li><strong>Mobile:</strong> +95 9 254 852 641</li>
+        <li>
+          <strong>LinkedIn:</strong>
+          <a href="https://www.linkedin.com/in/tual-muan-b1a825130/" target="_blank" class="linkedin-link">
+            LinkedIn Profile
+            <img src="https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/linkedIn%20img.png" alt="LinkedIn" />
+          </a>
+        </li>
+        <li class="resume-link">
+          To view my CV/Resume in PDF file,
+          <a href="https://drive.google.com/file/d/1vlxo8ahuu_KSuhSF8puS-IjS-HufeYq1/view?usp=sharing" target="_blank">
+            please click here.
+          </a>
+        </li>
+      </ul>
+
+      <h3>Address</h3>
+      <p>
+        No.48, Bayinnaung 2 lane 1, Mayangone Township,<br />
+        Yangon <strong>(11061)</strong>, Myanmar.
+      </p>
+    </div>
+
+    <!-- Contact Form -->
+  <div class="contact-form">
+  <form id="contactForm" class="contactForm" action="https://formspree.io/f/xdkdknln" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <p id="formResponse"></p>
+</div>
+
+
+  </div>
+
+</section>
+
     </main>
     <br>
   <hr>
-
   <section class="note">
     <p>* Notice *</p> 
     <ul>
@@ -365,7 +391,7 @@
      <li id="red">This website was fully built using my own knowledge of web programming languages including HTML, CSS, and JavaScript.</li>
     </ul> 
    <p class="date">
-      <span>Last Updated Date: 17 July, 2025</span>
+      <span>Last Updated Date: 27 Jun 2025</span>
    </p>
   </section>
   
@@ -373,7 +399,6 @@
       <p>Copyright &copy;2025 | My Personal Resume | All Rights Reserved. Powered by Mr. Tual Muan.</p>
     </footer>
     
-    <script src="title.js"></script>
     <script src="script.js"></script>
     <script>
     document.addEventListener('contextmenu', function(e) {
@@ -450,8 +475,7 @@
       }
 
       if (data) {
-        alert("Login Success! Welcome!");
-
+        alert("Login successful! Welcome to my personal website.");
         // Hide login overlay
         document.getElementById('login-form').style.display = 'none';
 
@@ -466,6 +490,7 @@
     }
   });
 </script>
+
 
   </body>
   

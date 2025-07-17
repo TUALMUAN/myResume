@@ -1,22 +1,4 @@
 
-/*const overlay = document.getElementById('login-form');
-const form = overlay.querySelector('form');
-const passwordInput = form.querySelector('input[type="password"]');
-
-form.addEventListener('submit', function(e) {
-  e.preventDefault();
-
-  if (passwordInput.value === '146872') {
-    overlay.style.display = 'none';
-  } else {
-    alert('Invalid PIN. Please try again.');
-  }
-});
-
-window.addEventListener('load', function() {
-  overlay.classList.add('active');
-});*/
-
 // JavaScript code to animate the website title
 
 var myPhotos = [
@@ -69,6 +51,7 @@ var photos = [
   "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/2025.2.15_Photo%201.jpg",
   "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/selfie%201.jpg",
   "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/pic%20in%20the%20office%202%20(2).jpg"
+  
 ];
 
 // Preload images
@@ -128,4 +111,53 @@ window.onscroll = function() { scrollFunction() };
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
 
-    
+    //form handling with fetch API
+const form = document.getElementById("contactForm");
+const statusEl = document.getElementById("formResponse");
+
+async function handleSubmit(e) {
+  e.preventDefault();
+
+  const formData = new FormData(form);
+  // Optional: set reply-to for email confirmation
+  formData.set("_replyto", form.elements.email.value);
+
+  console.group("Contact Form Submission");
+  console.log("Form action URL:", form.action);
+  console.log("FormData entries:");
+  for (let [key, val] of formData.entries()) console.log(`  ${key}: ${val}`);
+  
+  try {
+    const response = await fetch(form.action, {
+      method: form.method,
+      headers: { Accept: "application/json" },
+      body: formData
+    });
+
+    console.log("Response status:", response.status);
+    const text = await response.text();
+    console.log("Response body:", text);
+
+    if (response.ok) {
+      statusEl.style.color = "#00a878";
+      statusEl.textContent = "✅ Message sent successfully! Thank you for reaching out.";
+      form.reset();
+    } else {
+      let json;
+      try { json = JSON.parse(text); } catch { }
+      statusEl.style.color = "red";
+      statusEl.textContent = json?.errors ?
+        json.errors.map(e => e.message).join(", ") :
+        "❌ There was an error submitting the form. Try again.";
+    }
+  } catch (err) {
+    console.error("Fetch error:", err);
+    statusEl.style.color = "red";
+    statusEl.textContent = "❌ Submission failed due to network error.";
+  }
+
+  console.groupEnd();
+}
+
+form.addEventListener("submit", handleSubmit);
+
