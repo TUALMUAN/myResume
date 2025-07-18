@@ -644,7 +644,10 @@ footer {
 .contact-info {
   flex: 1;
   color:#014f5c;
-  margin-left: 3rem;
+  margin-left: 3.5rem;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
 }
 
 .contact-info ul {
