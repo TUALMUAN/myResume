@@ -189,8 +189,7 @@ header img {
   border-radius: 8%;
   width: 14rem; /* 208px */
   height: 15.5rem; /* 220px */
-  padding: 0.13rem; /* 4px */
-  border: 0.125rem solid #fd7e34; /* 2px */
+  border: 0.2rem solid #fd7e34; /* 2px */
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -198,11 +197,21 @@ header img {
   margin-top: .65rem;
 }
 
+.name-cv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5.5rem; /* 20px */
+  margin-right: 5.5rem; /* 20px */
+}
+
 .name {
   color: rgb(253, 252, 251);
   text-align: center;
   font-size: 1.05rem; /* 20px */
-  border: 0.08rem solid #f7f6f2;
+  font-weight: bold;
+  border: 0.094rem solid #f7f6f2;
   justify-content: center;
   align-content: center;
   display: flex;
@@ -227,10 +236,24 @@ header img {
 }
 
 .name :hover {
-  background-color: #c5e8fc;
-  color: rgb(203, 121, 4);
-  padding: 0.625rem; /* 10px */
-  font-size: 1.875rem; /* 30px */
+  background-color: #021426;
+  color: rgb(248, 146, 4);
+}
+
+.download-btn {
+      background-color: #a41313;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 6px;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+    
+.download-btn a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 header li {
@@ -644,7 +667,8 @@ footer {
 .contact-info {
   flex: 1;
   color:#014f5c;
-  margin-left: 3.5rem;
+  margin: auto;
+  margin-left: 1rem;
   justify-content: center;
   align-items: flex-start;
   align-content: center;
