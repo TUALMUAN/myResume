@@ -66,7 +66,7 @@ body {
 }
 
 #themeSwitcher img {
-  width: 2.1rem;
+  width: 2.0rem;
   filter: brightness(1.1);
 }
 
@@ -189,7 +189,7 @@ header img {
   border-radius: 8%;
   width: 14rem; /* 208px */
   height: 15.5rem; /* 220px */
-  border: 0.17rem solid #fd7e34; /* 2px */
+  border: 0.15rem solid #fd7e34; /* 2px */
   justify-content: center;
   align-items: center;
   align-content: center;
