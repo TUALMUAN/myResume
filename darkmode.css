@@ -25,14 +25,6 @@ a {
   color: #ed960a;
 }
 
-#darkMode {
-  width: 2.5vw;
-  height: 5vh;
-  align-content: center;
-  justify-content: center;
-  display: inline-flex;
-}
-
 .why-section {
   display: flex;
   justify-content: center;

@@ -66,8 +66,15 @@ body {
 }
 
 #themeSwitcher img {
-  width: 2.0rem;
   filter: brightness(1.1);
+}
+
+#darkMode {
+  width: 2.5vw;
+  height: 5vh;
+  align-content: center;
+  justify-content: center;
+  display: inline-flex;
 }
 
 #modeLabel {
@@ -677,28 +684,24 @@ footer {
 
 .contact-info {
   color:#014f5c;
-  margin-left: 2rem;
+  margin-left: 3rem;
   justify-content: center;
   align-items: flex-start;
   align-content: center;
-  line-height: 4em;
+  line-height: 3em;
 }
 
 .contact-info ul {
   list-style: none;
-  padding: 0;
-  margin: auto;
 }
 
 .contact-info li {
-  margin-bottom: 12px;
   font-size: 1rem;
 }
 
 .linkedin-link {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
   text-decoration: none;
   color: #0072b1;
 }
