@@ -205,7 +205,7 @@ header img {
 }
 
 .name {
-  color: rgb(3, 130, 169) !important;
+  color: rgb(4, 155, 201) !important;
   text-align: center;
   font-size: 1.05rem; /* 20px */
   font-weight: bold;
@@ -681,7 +681,7 @@ footer {
   justify-content: center;
   align-items: flex-start;
   align-content: center;
-  line-height: 2.5em;
+  line-height: 4em;
 }
 
 .contact-info ul {
