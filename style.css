@@ -240,7 +240,7 @@ header img {
 
 .download-btn {
       background-color: #a41313;
-      color: #fff;
+      color: #037888;
       padding: 0.5rem 1rem;
       text-decoration: none;
       border-radius: 6px;
@@ -258,20 +258,21 @@ header li {
   padding: 0.625rem; /* 10px */
   text-decoration: none;
   display: flex; /* changed from "flexbox" */
-  font-size: 0.93rem; /* 15px */
+  font-size: 0.85rem; /* 15px */
+  font-weight: bold;
   text-align: justify;
   margin-right: 5rem;
 }
 
 header ul :hover {
-  background-color: #f8fafb;
-  color: #fc9802;
+  background-color: #03567f;
+  color: #faf9f7;
   font-weight: bold;
 }
 
 header ul a {
   text-decoration: none;
-  color: rgb(252, 251, 249);
+  color: rgb(3, 76, 107);
 }
 
 #photos {
