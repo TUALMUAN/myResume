@@ -258,10 +258,10 @@ header li {
   padding: 0.625rem; /* 10px */
   text-decoration: none;
   display: flex; /* changed from "flexbox" */
-  font-size: 0.85rem; /* 15px */
+  font-size: 0.92rem; /* 15px */
   font-weight: bold;
   text-align: justify;
-  margin-right: 5rem;
+  margin-right: 4rem;
 }
 
 header ul :hover {
