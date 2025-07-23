@@ -679,7 +679,8 @@ footer {
   gap: 1rem;
   justify-content: center;
   align-items: flex-start;
-  margin-left: 4rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 }
 
 .contact-info {
@@ -688,11 +689,13 @@ footer {
   justify-content: center;
   align-items: flex-start;
   align-content: center;
-  line-height: 3em;
+  line-height: 2.5em;
 }
 
 .contact-info ul {
   list-style: none;
+  margin-left: 2rem; 
+  margin-right: 2rem; 
 }
 
 .contact-info li {
@@ -728,6 +731,7 @@ footer {
   flex-direction: column;
   align-items: center;
   margin-right: 3rem;
+  margin-left: 3rem;
 }
 
 .contactForm {

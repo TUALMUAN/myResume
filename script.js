@@ -161,3 +161,89 @@ async function handleSubmit(e) {
 
 form.addEventListener("submit", handleSubmit);
 
+//Dark Mode
+
+  const themeToggle = document.getElementById('darkMode');
+  const modeLabel = document.getElementById('modeLabel');
+  const body = document.body;
+
+  // Shared toggle function
+  function toggleTheme() {
+    body.classList.toggle('dark-mode');
+    if (body.classList.contains('dark-mode')) {
+      localStorage.setItem('darkMode', 'enabled');
+      themeToggle.src = "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/nightMode.png";
+      modeLabel.textContent = "Dark Mode";
+    } else {
+      localStorage.setItem('darkMode', 'disabled');
+      themeToggle.src = "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/dayMode.png";
+      modeLabel.textContent = "Light Mode";
+    }
+  }
+
+  // Initialize mode from localStorage
+  if (localStorage.getItem('darkMode') === 'enabled') {
+    body.classList.add('dark-mode');
+    themeToggle.src = "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/nightMode.png";
+    modeLabel.textContent = "Dark Mode";
+  } else {
+    themeToggle.src = "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/dayMode.png";
+    modeLabel.textContent = "Light Mode";
+  }
+
+  // Make both image and text clickable
+  themeToggle.addEventListener('click', toggleTheme);
+  modeLabel.addEventListener('click', toggleTheme);
+
+//SUPABASE LOGIN SCRIPT
+
+src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js";
+
+  // Disable scroll until login
+  document.body.style.overflow = 'hidden';
+
+  // Initialize Supabase client
+  const supabaseUrl = 'https://hdsepxgoerejvtvzqpil.supabase.co';
+  const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imhkc2VweGdvZXJlanZ0dnpxcGlsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTI2NDkwOTUsImV4cCI6MjA2ODIyNTA5NX0.RRU8zQCELzeEN_hc9hcVnMZ-S58Ft-U4ZilQVMjN9ZU';
+  const supabaseClient = supabase.createClient(supabaseUrl, supabaseKey);
+
+  // Login form submit handler
+  document.querySelector('.login-box').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const pin = document.getElementById('pin-input').value.trim();
+
+    if (!pin) {
+      alert("Please enter a PIN.");
+      return;
+    }
+
+    try {
+      const { data, error } = await supabaseClient
+        .from('users')
+        .select('*')
+        .eq('pin', pin)
+        .maybeSingle();
+
+      if (error) {
+        alert("Supabase error: " + error.message);
+        console.error(error);
+        return;
+      }
+
+      if (data) {
+        alert("Login successful! Welcome to My Personal Website.");
+        // Hide login overlay
+        document.getElementById('login-form').style.display = 'none';
+
+        // Enable page scrolling
+        document.body.style.overflow = 'auto';
+      } else {
+        alert("Invalid PIN. Please try again.");
+      }
+    } catch (err) {
+      alert("Unexpected error: " + err.message);
+      console.error(err);
+    }
+  });
+
+
