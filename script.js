@@ -195,22 +195,50 @@ form.addEventListener("submit", handleSubmit);
   themeToggle.addEventListener('click', toggleTheme);
   modeLabel.addEventListener('click', toggleTheme);
 
-//SUPABASE LOGIN SCRIPT
+  
+// Dynamically load Supabase SDK
+const loadSupabase = () => {
+  return new Promise((resolve, reject) => {
+    const script = document.createElement('script');
+    script.src = "https://cdn.jsdelivr.net/npm/@supabase/supabase-js";
+    script.onload = resolve;
+    script.onerror = reject;
+    document.head.appendChild(script);
+  });
+};
 
-src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js";
+// Wait for DOM to load
+const onDomReady = () => {
+  return new Promise((resolve) => {
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", resolve);
+    } else {
+      resolve();
+    }
+  });
+};
 
+// Main app logic
+const initApp = async () => {
   // Disable scroll until login
   document.body.style.overflow = 'hidden';
 
-  // Initialize Supabase client
+  // Supabase credentials
   const supabaseUrl = 'https://hdsepxgoerejvtvzqpil.supabase.co';
   const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imhkc2VweGdvZXJlanZ0dnpxcGlsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTI2NDkwOTUsImV4cCI6MjA2ODIyNTA5NX0.RRU8zQCELzeEN_hc9hcVnMZ-S58Ft-U4ZilQVMjN9ZU';
   const supabaseClient = supabase.createClient(supabaseUrl, supabaseKey);
 
-  // Login form submit handler
-  document.querySelector('.login-box').addEventListener('submit', async (e) => {
+  const loginForm = document.querySelector('.login-box');
+  const pinInput = document.getElementById('pin-input');
+
+  if (!loginForm || !pinInput) {
+    console.error("Login form or PIN input not found.");
+    return;
+  }
+
+  loginForm.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const pin = document.getElementById('pin-input').value.trim();
+    const pin = pinInput.value.trim();
 
     if (!pin) {
       alert("Please enter a PIN.");
@@ -232,10 +260,7 @@ src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js";
 
       if (data) {
         alert("Login successful! Welcome to My Personal Website.");
-        // Hide login overlay
         document.getElementById('login-form').style.display = 'none';
-
-        // Enable page scrolling
         document.body.style.overflow = 'auto';
       } else {
         alert("Invalid PIN. Please try again.");
@@ -245,5 +270,18 @@ src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js";
       console.error(err);
     }
   });
+};
+
+// Run everything
+(async () => {
+  try {
+    await onDomReady();
+    await loadSupabase();
+    initApp();
+  } catch (err) {
+    console.error("Error initializing app:", err);
+    alert("Failed to load login system.");
+  }
+})();
 
 
