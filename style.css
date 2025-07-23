@@ -212,37 +212,28 @@ header img {
 }
 
 .name {
-  color: rgb(4, 155, 201) !important;
-  text-align: center;
-  font-size: 1.05rem; /* 20px */
+  color: rgb(3, 130, 169);
+  font-size: 1.05rem;
   font-weight: bold;
   border: 0.094rem solid #f7f6f2;
-  justify-content: center;
-  align-content: center;
   display: flex;
-  padding: 0.3125rem; /* 5px */
-  margin: auto;
-  animation: borderTransition 0.5s infinite;
+  padding: 0.3125rem;
+  animation: borderTransition 3s infinite;
+  transition: background-color 0.3s, color 0.3s;
+  gap: 1rem;
+}
+
+.name:hover {
+  background-color: #021426;
+  color: rgb(248, 146, 4);
+  font-style: italic;
 }
 
 @keyframes borderTransition {
-  0% {
-    border-color: rgb(195, 71, 71);
-  }
-  33% {
-    border-color: rgb(18, 151, 160);
-  }
-  66% {
-    border-color: rgb(58, 188, 58);
-  }
-  100% {
-    border-color: rgb(234, 148, 20);
-  }
-}
-
-.name :hover {
-  background-color: #021426;
-  color: rgb(248, 146, 4);
+  0% { border-color: rgb(195, 71, 71); }
+  33% { border-color: rgb(18, 151, 160); }
+  66% { border-color: rgb(58, 188, 58); }
+  100% { border-color: rgb(234, 148, 20); }
 }
 
 .download-btn {
@@ -265,7 +256,7 @@ header li {
   padding: 0.625rem; /* 10px */
   text-decoration: none;
   display: flex; /* changed from "flexbox" */
-  font-size: 0.92rem; /* 15px */
+  font-size: 0.85rem; /* 15px */
   font-weight: bold;
   text-align: justify;
   margin-right: 4rem;
@@ -279,7 +270,8 @@ header ul :hover {
 
 header ul a {
   text-decoration: none;
-  color: rgb(3, 76, 107);
+  color: rgb(206, 125, 3);
+  font-style: italic;
 }
 
 #photos {
