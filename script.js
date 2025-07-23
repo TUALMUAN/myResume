@@ -195,31 +195,33 @@ form.addEventListener("submit", handleSubmit);
   themeToggle.addEventListener('click', toggleTheme);
   modeLabel.addEventListener('click', toggleTheme);
 
-  
+
 // Dynamically load Supabase SDK
-const loadSupabase = () => {
-  return new Promise((resolve, reject) => {
-    const script = document.createElement('script');
-    script.src = "https://cdn.jsdelivr.net/npm/@supabase/supabase-js";
-    script.onload = resolve;
-    script.onerror = reject;
-    document.head.appendChild(script);
-  });
-};
+(async () => {
+  // Dynamically load Supabase
+  const loadSupabase = () => {
+    return new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.src = "https://cdn.jsdelivr.net/npm/@supabase/supabase-js";
+      script.onload = resolve;
+      script.onerror = reject;
+      document.head.appendChild(script);
+    });
+  };
 
-// Wait for DOM to load
-const onDomReady = () => {
-  return new Promise((resolve) => {
-    if (document.readyState === "loading") {
-      document.addEventListener("DOMContentLoaded", resolve);
-    } else {
-      resolve();
-    }
-  });
-};
+  const onDomReady = () => {
+    return new Promise((resolve) => {
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", resolve);
+      } else {
+        resolve();
+      }
+    });
+  };
 
-// Main app logic
-const initApp = async () => {
+  await onDomReady();
+  await loadSupabase();
+
   // Disable scroll until login
   document.body.style.overflow = 'hidden';
 
@@ -270,18 +272,4 @@ const initApp = async () => {
       console.error(err);
     }
   });
-};
-
-// Run everything
-(async () => {
-  try {
-    await onDomReady();
-    await loadSupabase();
-    initApp();
-  } catch (err) {
-    console.error("Error initializing app:", err);
-    alert("Failed to load login system.");
-  }
 })();
-
-
