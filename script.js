@@ -3,9 +3,9 @@
 
 var myPhotos = [
 
-  "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/2025.2.15_Photo%202.jpg",
-  "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/2025.2.15_Photo%202.jpg",
-  "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/2025.2.15_Photo%203.jpg",
+  "https://tualkhanmuan.com/Web-Images-main/2023myPhoto.jpg",
+  "https://tualkhanmuan.com/Web-Images-main/2025.2.15_Photo%203.jpg"
+
    ];
    
 var index = 0;
@@ -25,9 +25,10 @@ setInterval(updateMyPhotos, 2000);
 //slideshow of Certificates
 
 var certificates = [
-  "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/tualMuan058's%20profile%20_%20Codecademy%20HTML.jpg",
-  "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/Tual%20Muan%20Certificate%20of%20Google%20Digital%20Skills.jpg",
-  "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/Tual-Khan-Muan-American-University-new-Cert-C1-A4-long-names-1-34-July-3-2022.jpg"
+"https://tualkhanmuan.com/Web-Images-main/Executive%20Diploma%20in%20Business%20Management.jpg",
+"https://tualkhanmuan.com/Web-Images-main/Tual%20Muan%20Certificate%20of%20Google%20Digital%20Skills.jpg",
+"https://tualkhanmuan.com/Web-Images-main/Intermediate%20JavaScript%20Certificate.jpg"
+
 ];
 
 var index = 0;
@@ -48,9 +49,10 @@ setInterval(updateImage, 3000);
 //slideshow of photos
 
 var photos = [
-  "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/2025.2.15_Photo%201.jpg",
-  "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/selfie%201.jpg",
-  "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/pic%20in%20the%20office%202%20(2).jpg"
+  "https://tualkhanmuan.com/Web-Images-main/Copy%20of%20myphoto.jpg",
+  "https://tualkhanmuan.com/Web-Images-main/2025.2.15_Photo%202.jpg",
+  "https://tualkhanmuan.com/Web-Images-main/Copy%20of%20myphoto0001.jpg"
+
   
 ];
 
@@ -76,8 +78,11 @@ setInterval(updatePhotos, 2000); // Change every 2 seconds
 
 // Slideshow of Awards
 var awards = [
-  "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/Intermediate%20JavaScript%20Certificate.jpg",
-  "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/tualMuan058's%20profile%20_%20Codecademy%20HTML.jpg"
+
+  "https://tualkhanmuan.com/Web-Images-main/graduation%20day.jpg",
+  "https://tualkhanmuan.com/Web-Images-main/tualMuan058's%20profile%20_%20Codecademy%20HTML.jpg",
+  "https://tualkhanmuan.com/Web-Images-main/Intermediate%20JavaScript%20Certificate.jpg"
+
 ];
 
 var num = 0;
@@ -172,11 +177,11 @@ form.addEventListener("submit", handleSubmit);
     body.classList.toggle('dark-mode');
     if (body.classList.contains('dark-mode')) {
       localStorage.setItem('darkMode', 'enabled');
-      themeToggle.src = "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/nightMode.png";
+      themeToggle.src = "https://tualkhanmuan.com/Web-Images-main/nightMode.png";
       modeLabel.textContent = "Dark Mode";
     } else {
       localStorage.setItem('darkMode', 'disabled');
-      themeToggle.src = "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/dayMode.png";
+      themeToggle.src = "https://tualkhanmuan.com/Web-Images-main/dayMode.png";
       modeLabel.textContent = "Light Mode";
     }
   }
@@ -184,10 +189,10 @@ form.addEventListener("submit", handleSubmit);
   // Initialize mode from localStorage
   if (localStorage.getItem('darkMode') === 'enabled') {
     body.classList.add('dark-mode');
-    themeToggle.src = "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/nightMode.png";
+    themeToggle.src = "https://tualkhanmuan.com/Web-Images-main/nightMode.png";
     modeLabel.textContent = "Dark Mode";
   } else {
-    themeToggle.src = "https://raw.githubusercontent.com/TUALMUAN/Web-Images/main/dayMode.png";
+    themeToggle.src = "https://tualkhanmuan.com/Web-Images-main/dayMode.png";
     modeLabel.textContent = "Light Mode";
   }
 
