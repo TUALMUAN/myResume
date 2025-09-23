@@ -168,7 +168,7 @@ modeLabel.addEventListener('click', toggleTheme);
   document.body.style.overflow = 'hidden';
 
   const supabaseUrl = 'https://hdsepxgoerejvtvzqpil.supabase.co';
-  const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...';
+  const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imhkc2VweGdvZXJlanZ0dnpxcGlsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTI2NDkwOTUsImV4cCI6MjA2ODIyNTA5NX0.RRU8zQCELzeEN_hc9hcVnMZ-S58Ft-U4ZilQVMjN9ZU';
   const supabaseClient = supabase.createClient(supabaseUrl, supabaseKey);
 
   const loginForm = document.querySelector('.login-box');
