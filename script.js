@@ -1,8 +1,9 @@
 // JavaScript code to animate the website title
 
 var myPhotos = [
-  "https://cdn.tualkhanmuan.com/Web-Images-main/2023myPhoto.jpg",
-  "https://cdn.tualkhanmuan.com/Web-Images-main/2025.2.15_Photo%203.jpg"
+    "https://cdn.tualkhanmuan.com/Web-Images-main/2025.2.15_Photo%203.jpg",
+    "https://cdn.tualkhanmuan.com/Web-Images-main/2025.2.15_Photo%202.jpg",
+    "https://cdn.tualkhanmuan.com/Web-Images-main/photo%20in%20coat.jpg"
 ];
 
 var index = 0;
@@ -36,7 +37,8 @@ setInterval(updateImage, 3000);
 var photos = [
   "https://cdn.tualkhanmuan.com/Web-Images-main/Copy%20of%20myphoto.jpg",
   "https://cdn.tualkhanmuan.com/Web-Images-main/2025.2.15_Photo%202.jpg",
-  "https://cdn.tualkhanmuan.com/Web-Images-main/Copy%20of%20myphoto0001.jpg"
+  "https://cdn.tualkhanmuan.com/Web-Images-main/Copy%20of%20myphoto0001.jpg",
+  "https://cdn.tualkhanmuan.com/Web-Images-main/2023myPhoto.jpg",
 ];
 
 // Preload images
