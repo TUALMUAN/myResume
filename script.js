@@ -1,369 +1,372 @@
-// JavaScript code to animate the website title
+document.addEventListener("DOMContentLoaded", () => {
+  // ============================================================
+  // SLIDESHOWS
+  // ============================================================
 
-var myPhotos = [
+  // My Photos
+  const myPhotos = [
     "https://cdn.tualkhanmuan.com/Web-Images-main/2025.2.15_Photo%203.jpg",
     "https://cdn.tualkhanmuan.com/Web-Images-main/2025.2.15_Photo%202.jpg",
     "https://cdn.tualkhanmuan.com/Web-Images-main/photo%20in%20coat.jpg"
-];
+  ];
 
-var index = 0;
+  let index = 0;
+  const myPhotosImg = document.getElementById("myPhotos");
 
-function updateMyPhotos() {
-  var img = document.getElementById("myPhotos");
-  img.src = myPhotos[index];
-  index++;
-
-  if (index == myPhotos.length) index = 0;
-}
-
-updateMyPhotos();
-setInterval(updateMyPhotos, 2000);
+  if (myPhotosImg) {
+    setInterval(() => {
+      index = (index + 1) % myPhotos.length;
+      myPhotosImg.src = myPhotos[index];
+    }, 2000);
+  }
 
 
-// Slideshow of Certificates
+  // Certificates
+  const certificates = [
+    "https://cdn.tualkhanmuan.com/Web-Images-main/Executive%20Diploma%20in%20Business%20Management.jpg",
+    "https://cdn.tualkhanmuan.com/Web-Images-main/Tual%20Muan%20Certificate%20of%20Google%20Digital%20Skills.jpg",
+    "https://cdn.tualkhanmuan.com/Web-Images-main/Intermediate%20JavaScript%20Certificate.jpg"
+  ];
 
-var certificates = [
-  "https://cdn.tualkhanmuan.com/Web-Images-main/Executive%20Diploma%20in%20Business%20Management.jpg",
-  "https://cdn.tualkhanmuan.com/Web-Images-main/Tual%20Muan%20Certificate%20of%20Google%20Digital%20Skills.jpg",
-  "https://cdn.tualkhanmuan.com/Web-Images-main/Intermediate%20JavaScript%20Certificate.jpg"
-];
+  let certIndex = 0;
+  const certImg = document.getElementById("certificates");
 
-var certIndex = 0;
-
-function updateImage() {
-  var img = document.getElementById("certificates");
-  img.src = certificates[certIndex];
-  certIndex++;
-
-  if (certIndex == certificates.length) certIndex = 0;
-}
-
-updateImage();
-setInterval(updateImage, 3000);
+  if (certImg) {
+    setInterval(() => {
+      certIndex = (certIndex + 1) % certificates.length;
+      certImg.src = certificates[certIndex];
+    }, 3000);
+  }
 
 
-// Slideshow of Photos
+  // Photos
+  const photos = [
+    "https://cdn.tualkhanmuan.com/Web-Images-main/Copy%20of%20myphoto.jpg",
+    "https://cdn.tualkhanmuan.com/Web-Images-main/2025.2.15_Photo%202.jpg",
+    "https://cdn.tualkhanmuan.com/Web-Images-main/Copy%20of%20myphoto0001.jpg",
+    "https://cdn.tualkhanmuan.com/Web-Images-main/2023myPhoto.jpg"
+  ];
 
-var photos = [
-  "https://cdn.tualkhanmuan.com/Web-Images-main/Copy%20of%20myphoto.jpg",
-  "https://cdn.tualkhanmuan.com/Web-Images-main/2025.2.15_Photo%202.jpg",
-  "https://cdn.tualkhanmuan.com/Web-Images-main/Copy%20of%20myphoto0001.jpg",
-  "https://cdn.tualkhanmuan.com/Web-Images-main/2023myPhoto.jpg",
-];
+  // Preload images
+  photos.forEach(photo => {
+    const img = new Image();
+    img.src = photo;
+  });
 
+  let photoIndex = 0;
+  const photosImg = document.getElementById("photos");
 
-// Preload images
-
-photos.forEach(function(photo) {
-  var img = new Image();
-  img.src = photo;
-});
-
-var photoIndex = 0;
-
-function updatePhotos() {
-  var img = document.getElementById("photos");
-  img.src = photos[photoIndex];
-  photoIndex++;
-
-  if (photoIndex == photos.length) photoIndex = 0;
-}
-
-updatePhotos();
-setInterval(updatePhotos, 2000);
+  if (photosImg) {
+    setInterval(() => {
+      photoIndex = (photoIndex + 1) % photos.length;
+      photosImg.src = photos[photoIndex];
+    }, 2000);
+  }
 
 
-// Slideshow of Awards
+  // Awards
+  const awards = [
+    "https://cdn.tualkhanmuan.com/Web-Images-main/graduation%20day.jpg",
+    "https://cdn.tualkhanmuan.com/Web-Images-main/tualMuan058's%20profile%20_%20Codecademy%20HTML.jpg",
+    "https://cdn.tualkhanmuan.com/Web-Images-main/Intermediate%20JavaScript%20Certificate.jpg"
+  ];
 
-var awards = [
-  "https://cdn.tualkhanmuan.com/Web-Images-main/graduation%20day.jpg",
-  "https://cdn.tualkhanmuan.com/Web-Images-main/tualMuan058's%20profile%20_%20Codecademy%20HTML.jpg",
-  "https://cdn.tualkhanmuan.com/Web-Images-main/Intermediate%20JavaScript%20Certificate.jpg"
-];
+  let awardIndex = 0;
+  const awardsImg = document.getElementById("awards");
 
-var awardIndex = 0;
-
-function updateAwards() {
-  var img = document.getElementById("awards");
-  img.src = awards[awardIndex];
-  awardIndex++;
-
-  if (awardIndex == awards.length) awardIndex = 0;
-}
-
-updateAwards();
-setInterval(updateAwards, 3000);
+  if (awardsImg) {
+    setInterval(() => {
+      awardIndex = (awardIndex + 1) % awards.length;
+      awardsImg.src = awards[awardIndex];
+    }, 3000);
+  }
 
 
-// Scroll button
+  // ============================================================
+  // SCROLL BUTTON
+  // ============================================================
 
-window.onscroll = function() {
-  scrollFunction();
-};
+  const scrollBtn = document.getElementById("scrollBtn");
 
-function scrollFunction() {
-  var scrollBtn = document.getElementById("scrollBtn");
+  window.addEventListener("scroll", () => {
+    if (!scrollBtn) return;
 
-  scrollBtn.style.display =
-    (document.body.scrollTop > 20 ||
-     document.documentElement.scrollTop > 20)
-      ? "block"
-      : "none";
-}
+    const yOffset = window.scrollY;
 
-function scrollToTop() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+    scrollBtn.style.display = yOffset > 20 ? "block" : "none";
+  });
 
-
-// Form handling with Fetch API
-
-const form = document.getElementById("contactForm");
-const statusEl = document.getElementById("formResponse");
-
-async function handleSubmit(e) {
-  e.preventDefault();
-
-  const formData = new FormData(form);
-  formData.set("_replyto", form.elements.email.value);
-
-  try {
-    const response = await fetch(form.action, {
-      method: form.method,
-      headers: {
-        Accept: "application/json"
-      },
-      body: formData
+  if (scrollBtn) {
+    scrollBtn.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
     });
+  }
 
-    const text = await response.text();
 
-    if (response.ok) {
+  // ============================================================
+  // FORM HANDLING
+  // ============================================================
 
-      statusEl.style.color = "#00a878";
+  const form = document.getElementById("contactForm");
+  const statusEl = document.getElementById("formResponse");
 
-      statusEl.textContent =
-        "✅ Message sent successfully! Thank you for reaching out.";
+  if (form) {
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
 
-      form.reset();
+      const formData = new FormData(form);
 
-    } else {
-
-      let json;
+      if (form.elements.email) {
+        formData.set("_replyto", form.elements.email.value);
+      }
 
       try {
-        json = JSON.parse(text);
-      } catch {}
+        const response = await fetch(form.action, {
+          method: form.method,
+          headers: {
+            Accept: "application/json"
+          },
+          body: formData
+        });
 
-      statusEl.style.color = "red";
+        if (response.ok) {
+          if (statusEl) {
+            statusEl.style.color = "#00a878";
+            statusEl.textContent =
+              "✅ Message sent successfully! Thank you for reaching out.";
+          }
 
-      statusEl.textContent =
-        json?.errors
-          ? json.errors.map(e => e.message).join(", ")
-          : "❌ There was an error submitting the form. Try again.";
+          form.reset();
+        } else {
+          const text = await response.text();
+
+          let json;
+
+          try {
+            json = JSON.parse(text);
+          } catch {
+            json = null;
+          }
+
+          if (statusEl) {
+            statusEl.style.color = "red";
+
+            statusEl.textContent = json?.errors
+              ? json.errors
+                  .map(err => err.message)
+                  .join(", ")
+              : "❌ There was an error submitting the form. Try again.";
+          }
+        }
+      } catch (err) {
+        if (statusEl) {
+          statusEl.style.color = "red";
+          statusEl.textContent =
+            "❌ Submission failed due to network error.";
+        }
+      }
+    });
+  }
+
+
+  // ============================================================
+  // DARK MODE
+  // ============================================================
+
+  const themeToggle = document.getElementById("darkMode");
+  const modeLabel = document.getElementById("modeLabel");
+  const body = document.body;
+
+  function toggleTheme() {
+    body.classList.toggle("dark-mode");
+
+    const isDark = body.classList.contains("dark-mode");
+
+    localStorage.setItem(
+      "darkMode",
+      isDark ? "enabled" : "disabled"
+    );
+
+    if (themeToggle) {
+      themeToggle.src = isDark
+        ? "https://cdn.tualkhanmuan.com/Web-Images-main/nightMode.png"
+        : "https://cdn.tualkhanmuan.com/Web-Images-main/dayMode.png";
     }
 
-  } catch (err) {
-
-    statusEl.style.color = "red";
-
-    statusEl.textContent =
-      "❌ Submission failed due to network error.";
+    if (modeLabel) {
+      modeLabel.textContent = isDark
+        ? "Dark Mode"
+        : "Light Mode";
+    }
   }
-}
-
-form.addEventListener("submit", handleSubmit);
 
 
-// Dark Mode
+  // Restore saved theme
+  if (localStorage.getItem("darkMode") === "enabled") {
+    body.classList.add("dark-mode");
 
-const themeToggle = document.getElementById('darkMode');
-const modeLabel = document.getElementById('modeLabel');
-const body = document.body;
+    if (themeToggle) {
+      themeToggle.src =
+        "https://cdn.tualkhanmuan.com/Web-Images-main/nightMode.png";
+    }
 
-function toggleTheme() {
-
-  body.classList.toggle('dark-mode');
-
-  if (body.classList.contains('dark-mode')) {
-
-    localStorage.setItem('darkMode', 'enabled');
-
-    themeToggle.src =
-      "https://cdn.tualkhanmuan.com/Web-Images-main/nightMode.png";
-
-    modeLabel.textContent = "Dark Mode";
-
+    if (modeLabel) {
+      modeLabel.textContent = "Dark Mode";
+    }
   } else {
+    if (themeToggle) {
+      themeToggle.src =
+        "https://cdn.tualkhanmuan.com/Web-Images-main/dayMode.png";
+    }
 
-    localStorage.setItem('darkMode', 'disabled');
-
-    themeToggle.src =
-      "https://cdn.tualkhanmuan.com/Web-Images-main/dayMode.png";
-
-    modeLabel.textContent = "Light Mode";
+    if (modeLabel) {
+      modeLabel.textContent = "Light Mode";
+    }
   }
-}
 
 
-// Initialize theme
+  if (themeToggle) {
+    themeToggle.addEventListener("click", toggleTheme);
+  }
 
-if (localStorage.getItem('darkMode') === 'enabled') {
-
-  body.classList.add('dark-mode');
-
-  themeToggle.src =
-    "https://cdn.tualkhanmuan.com/Web-Images-main/nightMode.png";
-
-  modeLabel.textContent = "Dark Mode";
-
-} else {
-
-  themeToggle.src =
-    "https://cdn.tualkhanmuan.com/Web-Images-main/dayMode.png";
-
-  modeLabel.textContent = "Light Mode";
-}
-
-themeToggle.addEventListener('click', toggleTheme);
-modeLabel.addEventListener('click', toggleTheme);
+  if (modeLabel) {
+    modeLabel.addEventListener("click", toggleTheme);
+  }
 
 
-// ============================================================
-// SUPABASE LOGIN
-// ============================================================
+  // ============================================================
+  // SUPABASE LOGIN
+  // KEPT HERE AS COMMENTS
+  // ============================================================
 
-// Dynamically load Supabase SDK
+  /*
+  (async () => {
 
-(async () => {
+    const loadSupabase = () =>
+      new Promise((resolve, reject) => {
 
-  const loadSupabase = () => new Promise((resolve, reject) => {
+        const script = document.createElement("script");
 
-    const script = document.createElement('script');
+        script.src =
+          "https://cdn.jsdelivr.net/npm/@supabase/supabase-js";
 
-    script.src =
-      "https://cdn.jsdelivr.net/npm/@supabase/supabase-js";
+        script.onload = resolve;
+        script.onerror = reject;
 
-    script.onload = resolve;
-    script.onerror = reject;
-
-    document.head.appendChild(script);
-  });
-
-
-  const onDomReady = () => new Promise(resolve => {
-
-    if (document.readyState === "loading") {
-
-      document.addEventListener("DOMContentLoaded", resolve);
-
-    } else {
-
-      resolve();
-    }
-  });
+        document.head.appendChild(script);
+      });
 
 
-  await onDomReady();
-  await loadSupabase();
+    await loadSupabase();
 
 
-  // ==========================================================
-  // WEBSITE SCROLL LOCK
-  // ==========================================================
-  //
-  // Currently DISABLED.
-  //
-  // document.body.style.overflow = 'hidden';
-  //
-  // ==========================================================
+    const supabaseUrl =
+      "https://hdsepxgoerejvtvzqpil.supabase.co";
 
 
-  const supabaseUrl =
-    'https://hdsepxgoerejvtvzqpil.supabase.co';
-
-  const supabaseKey =
-    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiIsImhkc2VweGdvZXJlanZ0dnpxcGlsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTI2NDkwOTUsImV4cCI6MjA2ODIyNTA5NX0.RRU8zQCELzeEN_hc9hcVnMZ-S58Ft-U4ZilQVMjN9ZU';
-
-  const supabaseClient =
-    supabase.createClient(supabaseUrl, supabaseKey);
+    const supabaseKey =
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiIsImhkc2VweGdvZXJlanZ0dnpxcGlsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTI2NDkwOTUsImV4cCI6MjA2ODIyNTA5NX0.RRU8zQCELzeEN_hc9hcVnMZ-S58Ft-U4ZilQVMjN9ZU";
 
 
-  const loginForm =
-    document.querySelector('.login-box');
-
-  const pinInput =
-    document.getElementById('pin-input');
-
-
-  if (!loginForm || !pinInput) return;
+    const supabaseClient =
+      supabase.createClient(
+        supabaseUrl,
+        supabaseKey
+      );
 
 
-  loginForm.addEventListener('submit', async (e) => {
-
-    e.preventDefault();
-
-    const pin = pinInput.value.trim();
-
-    if (!pin) {
-      return alert("Please enter a PIN.");
-    }
+    const loginForm =
+      document.querySelector(".login-box");
 
 
-    try {
-
-      const { data, error } =
-        await supabaseClient
-          .from('users')
-          .select('*')
-          .eq('pin', pin)
-          .maybeSingle();
+    const pinInput =
+      document.getElementById("pin-input");
 
 
-      if (error) {
+    if (!loginForm || !pinInput) return;
 
-        return alert(
-          "Supabase error: " + error.message
-        );
+
+    loginForm.addEventListener("submit", async (e) => {
+
+      e.preventDefault();
+
+
+      const pin =
+        pinInput.value.trim();
+
+
+      if (!pin) {
+        return alert("Please enter a PIN.");
       }
 
 
-      if (data) {
+      try {
+
+        const { data, error } =
+          await supabaseClient
+            .from("users")
+            .select("*")
+            .eq("pin", pin)
+            .maybeSingle();
+
+
+        if (error) {
+          return alert(
+            "Supabase error: " +
+            error.message
+          );
+        }
+
+
+        if (data) {
+
+          alert(
+            "Login successful! Welcome to My Personal Website."
+          );
+
+
+          const loginContainer =
+            document.getElementById("login-form");
+
+
+          if (loginContainer) {
+            loginContainer.style.display = "none";
+          }
+
+
+          document.body.style.overflow = "auto";
+
+        } else {
+
+          alert("Invalid PIN. Please try again.");
+
+        }
+
+      } catch (err) {
 
         alert(
-          "Login successful! Welcome to My Personal Website."
+          "Unexpected error: " +
+          err.message
         );
 
-        document.getElementById('login-form').style.display =
-          'none';
-
-
-        // ======================================================
-        // ENABLE WEBSITE SCROLL AFTER LOGIN
-        // ======================================================
-        //
-        // Currently DISABLED because scroll locking is disabled.
-        
-        //
-        // document.body.style.overflow = 'auto';
-        //
-        
-
-
-      } else {
-
-        alert("Invalid PIN. Please try again.");
       }
 
+    });
 
-    } catch (err) {
+  })();
+  */
 
-      alert(
-        "Unexpected error: " + err.message
-      );
-    }
 
-  });
+  // ============================================================
+  // FORCE PAGE SCROLLING
+  // ============================================================
+  // This prevents accidental JavaScript/CSS overflow locking
+  // from keeping the page stuck after the page loads.
 
-})();
+  document.documentElement.style.overflowY = "auto";
+  document.body.style.overflowY = "auto";
+
+});
