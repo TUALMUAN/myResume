@@ -41,9 +41,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Photos
   const photos = [
-    "https://cdn.tualkhanmuan.com/Web-Images-main/Copy%20of%20myphoto.jpg",
+    "https://cdn.tualkhanmuan.com/Web-Images-main/2025.2.15_Photo%203.jpg",
     "https://cdn.tualkhanmuan.com/Web-Images-main/2025.2.15_Photo%202.jpg",
-    "https://cdn.tualkhanmuan.com/Web-Images-main/Copy%20of%20myphoto0001.jpg",
     "https://cdn.tualkhanmuan.com/Web-Images-main/2023myPhoto.jpg"
   ];
 
